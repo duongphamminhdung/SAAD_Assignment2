@@ -11,13 +11,15 @@ test machine** (same box as the Mongo experiments), full defaults, via:
 ```
 
 Decisions pinned (document these in the paper): image `redis:7.4`; persistence disabled
-(`--save "" --appendonly no`) to keep BGSAVE fork noise out of the measurements; no CPU/RAM
-limits (parity with Mongo); resumable — finished (workload, rep) pairs are skipped on restart.
+(`--save "" --appendonly no`) to keep BGSAVE fork noise out of the measurements; per-container
+resource limits 2 CPUs / 2 GB RAM (team decision, same for all 3 databases); resumable —
+finished (workload, rep) pairs are skipped on restart.
 
 ## Setup
 
-- Image: `redis:7.4` (pin exact tag; record it for the paper), one container per node on `tp2-net`,
-  no CPU/RAM limits.
+- Image: `redis:7.4` (pin exact tag; record it for the paper), one container per node on `tp2-net`.
+- Resource limits per container (team decision, applied to all databases):
+  `deploy.resources.limits: cpus "2", memory 2g`.
 - Topology: asynchronous replication — redis1 = master; redis2..N = replicas. No init step
   (no rs.initiate equivalent): the replication link is declared at container start.
 
