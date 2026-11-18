@@ -103,6 +103,8 @@ for NODES in $NODE_CONFIGS; do
   echo "== keyspace ycsb RF=$rf, consistency $CONSISTENCY"
 
   for WL in $WORKLOADS; do
+    # Core workloads leave this empty; the ${arr[@]+...} guard keeps the empty
+    # expansion safe under `set -u` on bash 3.2 (macOS) as well as on Linux.
     MOUNT_CUSTOM=()
     if [ -f "$CUSTOM_WL_DIR/$WL" ]; then
       MOUNT_CUSTOM=(-v "$CUSTOM_WL_DIR":/tp2-workloads:ro); WLFILE="/tp2-workloads/$WL"
@@ -122,7 +124,7 @@ for NODES in $NODE_CONFIGS; do
       if [ "$left" != "0" ]; then echo "TRUNCATE left $left rows" >&2; exit 1; fi
 
       for PHASE in load run; do
-        CMD=(docker run --rm --network tp2-net -v "$YCSB_HOME":/ycsb "${MOUNT_CUSTOM[@]}" -w /ycsb "$YCSB_IMAGE"
+        CMD=(docker run --rm --network tp2-net -v "$YCSB_HOME":/ycsb ${MOUNT_CUSTOM[@]+"${MOUNT_CUSTOM[@]}"} -w /ycsb "$YCSB_IMAGE"
              bin/ycsb.sh "$PHASE" cassandra-cql -P "$WLFILE"
              -p "hosts=$HOSTS"
              -p "cassandra.readconsistencylevel=$CONSISTENCY"
