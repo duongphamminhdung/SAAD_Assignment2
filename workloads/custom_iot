@@ -1,0 +1,20 @@
+# TP2 custom workload candidate 2 — IoT sensor telemetry ingestion with live dashboards.
+# Scenario (see workloads/README.md): 3,000 sensors each reporting every 5 s = 600 inserts/s;
+# 40 dashboards each fetching the latest reading once per second = 40 reads/s;
+# 8 analysts loading a short trend (last <= 20 readings) every 2 s = 4 scans/s.
+# Total 644 ops/s -> 600/644 = 93.2% insert, 40/644 = 6.2% read, 4/644 = 0.6% scan
+# -> rounded 93 / 6 / 1.
+# recordcount / operationcount / threads are passed on the command line (shared protocol).
+workload=site.ycsb.workloads.CoreWorkload
+
+insertproportion=0.93
+readproportion=0.06
+scanproportion=0.01
+updateproportion=0
+readmodifywriteproportion=0
+
+# Dashboards and trends look at the most recent readings.
+requestdistribution=latest
+maxscanlength=20
+scanlengthdistribution=uniform
+readallfields=true

@@ -133,7 +133,7 @@ for NODES in $NODE_CONFIGS; do
         "${CMD[@]}" > "$OUT" 2>&1
         check_log "$OUT"
         # Appendix copy: readable (no shell escaping) and with the portable ~/ycsb-0.17.0 path.
-        { echo "# cassandra ${NODES} nodes ${WL} rep${REP} ${PHASE}"; echo "${CMD[*]}" | sed "s#$YCSB_HOME:#~/ycsb-0.17.0:#"; } >> "$CMDS"
+        { echo "# cassandra ${NODES} nodes ${WL} rep${REP} ${PHASE}"; echo "${CMD[*]}" | sed -e "s#$YCSB_HOME:#~/ycsb-0.17.0:#" -e "s#$CUSTOM_WL_DIR:#./workloads:#"; } >> "$CMDS"
       done
 
       # Per-container CPU/RAM right after the run: evidence the limits held (no OOM).
