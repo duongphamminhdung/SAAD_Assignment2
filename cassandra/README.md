@@ -20,7 +20,7 @@ Measured on the dev box (estimate, re-measure on the test machine): ring bring-u
 | | Value | Why |
 |---|---|---|
 | Image | `cassandra:5.0.9` | YCSB 0.17 driver (DataStax 3.0.0, protocol v4) verified working |
-| Per-node limits | `cpus: 2`, `mem_limit: 2g` (`NODE_CPUS`/`NODE_MEM` override for debugging only) | same limits must apply to every DB — see top-level README |
+| Per-node limits | `deploy.resources.limits`: cpus "2", memory 2g (`NODE_CPUS`/`NODE_MEM` override for debugging only) | same limits must apply to every DB — see top-level README |
 | JVM heap | `MAX_HEAP_SIZE=1G`, `HEAP_NEWSIZE=256M` | default heap is sized from host RAM (~3.75 GB/node), would not fit in 2 GB |
 | Topology | 1 DC/1 rack, `GossipingPropertyFileSnitch`, 16 vnodes; seeds `cass1` (3n) / `cass1,cass2` (5n) | |
 | Start order | sequential via `depends_on: service_healthy` (healthcheck: native transport active) | Cassandra refuses concurrent bootstraps; ring flaps otherwise |

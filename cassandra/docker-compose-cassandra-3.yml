@@ -4,7 +4,7 @@
 # Nodes start one at a time (depends_on: service_healthy): Cassandra refuses concurrent
 # bootstraps, and starting every node at once on one machine makes the ring flap.
 #
-# Per-node limits (same values for every DB, see top-level README): 2 CPUs, 2 GB RAM.
+# Per-node limits (team decision, same for every DB): 2 CPUs, 2 GB RAM via deploy.resources.limits.
 # Override for local debugging only: NODE_CPUS=1 NODE_MEM=1500m docker compose ... up -d
 networks:
   tp2-net:
@@ -13,8 +13,12 @@ networks:
 x-cass-node: &cass-node
   image: cassandra:5.0.9
   networks: [tp2-net]
-  cpus: ${NODE_CPUS:-2}
-  mem_limit: ${NODE_MEM:-2g}
+  # Team decision (2026-11-18): every DB container capped at 2 CPUs / 2 GB RAM.
+  deploy:
+    resources:
+      limits:
+        cpus: "${NODE_CPUS:-2}"
+        memory: ${NODE_MEM:-2g}
   # auto_snapshot=false: otherwise every TRUNCATE between reps writes a snapshot
   # of the table to disk (10 reps x 6 workloads -> fills the disk).
   # The entrypoint then applies the CASSANDRA_* env vars below and starts cassandra -f.

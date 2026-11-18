@@ -7,8 +7,12 @@ networks:
 x-cass-node: &cass-node
   image: cassandra:5.0.9
   networks: [tp2-net]
-  cpus: ${NODE_CPUS:-2}
-  mem_limit: ${NODE_MEM:-2g}
+  # Team decision (2026-11-18): every DB container capped at 2 CPUs / 2 GB RAM.
+  deploy:
+    resources:
+      limits:
+        cpus: "${NODE_CPUS:-2}"
+        memory: ${NODE_MEM:-2g}
   entrypoint: ["bash", "-c", "sed -i 's/^auto_snapshot: true/auto_snapshot: false/' /etc/cassandra/cassandra.yaml && exec docker-entrypoint.sh cassandra -f"]
   environment:
     CASSANDRA_CLUSTER_NAME: tp2
