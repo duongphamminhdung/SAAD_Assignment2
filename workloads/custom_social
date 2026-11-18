@@ -1,0 +1,21 @@
+# TP2 custom workload candidate 3 — social network during a viral event (celebrity hotspot).
+# Scenario (see workloads/README.md): 50,000 active users; per user per minute 6 post/profile
+# views (read), 3 likes / counter changes (update), 0.5 comments or new posts (insert)
+# -> 9.5 ops/min/user, ~7,900 ops/s. Mix: 6/9.5 = 63% read, 3/9.5 = 32% update,
+# 0.5/9.5 = 5% insert -> rounded 65 / 30 / 5.
+# Hotspot: 1% of the records (viral posts / celebrity profiles) receive 60% of all requests.
+# recordcount / operationcount / threads are passed on the command line (shared protocol).
+workload=site.ycsb.workloads.CoreWorkload
+
+readproportion=0.65
+updateproportion=0.30
+insertproportion=0.05
+scanproportion=0
+readmodifywriteproportion=0
+
+requestdistribution=hotspot
+hotspotdatafraction=0.01
+hotspotopnfraction=0.60
+readallfields=true
+# A like changes one counter field.
+writeallfields=false

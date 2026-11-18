@@ -31,3 +31,6 @@ scratch/
 # NOTE on purpose: raw YCSB logs under results/raw/ are deliberately NOT
 # ignored (*.log is not listed) — they are required evidence for the
 # TP2 Appendix (one complete successful run per database).
+
+# --- Local agent/working notes (task context, status) — never committed ---
+context/

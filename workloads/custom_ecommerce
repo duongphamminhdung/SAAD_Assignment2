@@ -1,0 +1,19 @@
+# TP2 custom workload candidate 1 — e-commerce shopping cart at a sales peak.
+# Scenario (see workloads/README.md): 20,000 concurrent shoppers; per shopper per minute
+# 3 cart/product views (read), 1 cart change (read cart -> write it back = read-modify-write),
+# 0.2 new carts/sessions (insert) -> 4.2 ops/min/shopper, ~1,400 ops/s at peak.
+# Mix: 3/4.2 = 71% read, 1/4.2 = 24% RMW, 0.2/4.2 = 5% insert -> rounded 70 / 25 / 5.
+# recordcount / operationcount / threads are passed on the command line (shared protocol).
+workload=site.ycsb.workloads.CoreWorkload
+
+readproportion=0.70
+readmodifywriteproportion=0.25
+insertproportion=0.05
+updateproportion=0
+scanproportion=0
+
+# A minority of active shoppers generate most traffic.
+requestdistribution=zipfian
+# Read the whole cart; a cart change rewrites one line item (one field).
+readallfields=true
+writeallfields=false
