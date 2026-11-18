@@ -1,0 +1,33 @@
+# --- macOS / editor noise ---
+.DS_Store
+Thumbs.db
+*~
+*.swp
+.idea/
+.vscode/
+
+# --- Python (analysis scripts) ---
+__pycache__/
+*.pyc
+.venv/
+
+# --- Secrets / credentials: never commit these ---
+.env
+.env.*
+*.key
+*.pem
+kaggle.json
+
+# --- Guard: course PDFs must NOT land in this repo ---
+# (course files live one level up; remove this line only if we decide to
+#  store built deliverables like the final paper PDF here)
+*.pdf
+
+# --- Scratch / transient files ---
+nohup.out
+*.tmp
+scratch/
+
+# NOTE on purpose: raw YCSB logs under results/raw/ are deliberately NOT
+# ignored (*.log is not listed) — they are required evidence for the
+# TP2 Appendix (one complete successful run per database).
