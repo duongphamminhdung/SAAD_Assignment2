@@ -1,0 +1,60 @@
+# Cassandra 5-node ring: cass1 + cass2 (seeds), cass3..cass5. Keyspace ycsb uses RF=5.
+# Same node definition as docker-compose-cassandra-3.yml; see comments there.
+networks:
+  tp2-net:
+    external: true
+
+x-cass-node: &cass-node
+  image: cassandra:5.0.9
+  networks: [tp2-net]
+  cpus: ${NODE_CPUS:-2}
+  mem_limit: ${NODE_MEM:-2g}
+  entrypoint: ["bash", "-c", "sed -i 's/^auto_snapshot: true/auto_snapshot: false/' /etc/cassandra/cassandra.yaml && exec docker-entrypoint.sh cassandra -f"]
+  environment:
+    CASSANDRA_CLUSTER_NAME: tp2
+    CASSANDRA_SEEDS: cass1,cass2
+    CASSANDRA_ENDPOINT_SNITCH: GossipingPropertyFileSnitch
+    CASSANDRA_DC: DC1
+    CASSANDRA_RACK: RAC1
+    MAX_HEAP_SIZE: 1G
+    HEAP_NEWSIZE: 256M
+  healthcheck:
+    test: ["CMD-SHELL", "nodetool info 2>/dev/null | grep -q 'Native Transport active *: true'"]
+    interval: 10s
+    timeout: 20s
+    retries: 30
+    start_period: 60s
+
+services:
+  cass1:
+    <<: *cass-node
+    container_name: cass1
+    hostname: cass1
+
+  cass2:
+    <<: *cass-node
+    container_name: cass2
+    hostname: cass2
+    depends_on:
+      cass1: {condition: service_healthy}
+
+  cass3:
+    <<: *cass-node
+    container_name: cass3
+    hostname: cass3
+    depends_on:
+      cass2: {condition: service_healthy}
+
+  cass4:
+    <<: *cass-node
+    container_name: cass4
+    hostname: cass4
+    depends_on:
+      cass3: {condition: service_healthy}
+
+  cass5:
+    <<: *cass-node
+    container_name: cass5
+    hostname: cass5
+    depends_on:
+      cass4: {condition: service_healthy}
