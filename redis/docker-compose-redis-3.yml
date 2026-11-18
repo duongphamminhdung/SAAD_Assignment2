@@ -4,6 +4,8 @@ networks:
   tp2-net:
     external: true
 
+# Team decision (2026-11-18): every DB container in this project is capped at
+# 2 CPUs / 2 GB RAM (deploy.resources.limits) — same limits for all 3 databases.
 services:
   redis1:
     image: redis:7.4
@@ -13,6 +15,11 @@ services:
     # lands in the middle of a benchmark run (documented decision for the paper)
     command: ["redis-server", "--protected-mode", "no", "--save", "", "--appendonly", "no"]
     networks: [tp2-net]
+    deploy:
+      resources:
+        limits:
+          cpus: "2"
+          memory: 2g
 
   redis2:
     image: redis:7.4
@@ -20,6 +27,11 @@ services:
     command: ["redis-server", "--protected-mode", "no", "--save", "", "--appendonly", "no",
               "--replicaof", "redis1", "6379"]
     networks: [tp2-net]
+    deploy:
+      resources:
+        limits:
+          cpus: "2"
+          memory: 2g
 
   redis3:
     image: redis:7.4
@@ -27,3 +39,8 @@ services:
     command: ["redis-server", "--protected-mode", "no", "--save", "", "--appendonly", "no",
               "--replicaof", "redis1", "6379"]
     networks: [tp2-net]
+    deploy:
+      resources:
+        limits:
+          cpus: "2"
+          memory: 2g

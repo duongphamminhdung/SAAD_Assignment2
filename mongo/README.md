@@ -8,7 +8,11 @@ Files (to be pushed here from the experiment machine): `run_mongo.sh`,
 
 ## Setup
 
-- Image: `mongo:7.0`, one container per node on network `tp2-net`, no CPU/RAM limits.
+- Image: `mongo:7.0`, one container per node on network `tp2-net`.
+- **Resource limits (team decision 2026-11-18): every container capped at 2 CPUs / 2 GB RAM**
+  (`deploy.resources.limits: cpus "2", memory 2g`) — same limits as Redis and Cassandra.
+  ⚠️ If the recorded A–E runs were made WITHOUT these limits, they must be re-run with them
+  (the protocol requires identical limits across all 3 databases).
 - Topology: replica set `rs0` — 1 primary + 2 secondaries (3-node) or 1 primary + 4 secondaries (5-node).
 - Each node runs: `mongod --replSet rs0 --bind_ip_all --oplogSize 1024`
   (oplog capped at 1 GB/node; uncapped it grows to ~50 GB/node and fills the disk).

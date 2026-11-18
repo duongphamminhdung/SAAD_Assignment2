@@ -31,6 +31,8 @@ Any parameter change must be applied to **all** databases and both configuration
 - **Machine:** all recorded runs come from ONE machine (spec below) — never mix machines.
 - **One cluster at a time:** `docker compose down` the other databases' stacks before benchmarking.
 - YCSB 0.17.0, executed from an `eclipse-temurin:11-jre` container on docker network `tp2-net`.
+- **Resource limits (team decision): every DB container capped at 2 CPUs / 2 GB RAM**
+  (`deploy.resources.limits` in every compose file) — must be identical across all 3 databases.
 - Parameters: `recordcount=100000`, `operationcount=100000`, `threads=16`.
 - Workloads: core A–E **plus one custom workload** (scenario TBD by the team).
 - 10 repetitions per (database × node-config × workload); each rep = **wipe → load → run**.

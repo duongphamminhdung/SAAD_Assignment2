@@ -13,9 +13,10 @@ Files planned here: `run_cassandra.sh`, `docker-compose-cassandra-3.yml`, `docke
 - **Start the seed node first, wait for it to be Up, then start the others staggered** — starting
   all 5 at once on one machine makes the ring flap (this is the "cluster not initially stable"
   warning from the TP guide).
-- **Heap — the one documented exception to "no limits"**: the official image sizes its JVM heap from
-  host RAM; five default nodes exceed the 15 GB WSL2 allocation. Set per container:
-  `MAX_HEAP_SIZE=1G`, `HEAP_NEWSIZE=200M`. Explain this exception in the paper.
+- **Resource limits (team decision): 2 CPUs / 2 GB RAM per container** — same as Redis/Mongo.
+  The official Cassandra image sizes its JVM heap from host RAM unless overridden; with the 2 GB
+  container cap, set per container: `MAX_HEAP_SIZE=1G`, `HEAP_NEWSIZE=200M` (heap must fit inside
+  the 2 GB limit; document this in the paper).
 
 ## Keyspace / replication factor — verify before trusting any number
 
