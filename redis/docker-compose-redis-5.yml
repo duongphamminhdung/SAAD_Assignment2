@@ -1,0 +1,39 @@
+# Redis 5-node topology: redis1 = master, redis2..redis5 = replicas.
+networks:
+  tp2-net:
+    external: true
+
+services:
+  redis1:
+    image: redis:7.4
+    container_name: redis1
+    command: ["redis-server", "--protected-mode", "no", "--save", "", "--appendonly", "no"]
+    networks: [tp2-net]
+
+  redis2:
+    image: redis:7.4
+    container_name: redis2
+    command: ["redis-server", "--protected-mode", "no", "--save", "", "--appendonly", "no",
+              "--replicaof", "redis1", "6379"]
+    networks: [tp2-net]
+
+  redis3:
+    image: redis:7.4
+    container_name: redis3
+    command: ["redis-server", "--protected-mode", "no", "--save", "", "--appendonly", "no",
+              "--replicaof", "redis1", "6379"]
+    networks: [tp2-net]
+
+  redis4:
+    image: redis:7.4
+    container_name: redis4
+    command: ["redis-server", "--protected-mode", "no", "--save", "", "--appendonly", "no",
+              "--replicaof", "redis1", "6379"]
+    networks: [tp2-net]
+
+  redis5:
+    image: redis:7.4
+    container_name: redis5
+    command: ["redis-server", "--protected-mode", "no", "--save", "", "--appendonly", "no",
+              "--replicaof", "redis1", "6379"]
+    networks: [tp2-net]

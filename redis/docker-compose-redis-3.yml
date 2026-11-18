@@ -1,0 +1,29 @@
+# Redis 3-node topology: redis1 = master, redis2/redis3 = replicas.
+# External network tp2-net is created by run_redis.sh (or: docker network create tp2-net).
+networks:
+  tp2-net:
+    external: true
+
+services:
+  redis1:
+    image: redis:7.4
+    container_name: redis1
+    # protected-mode off: accept connections from other containers
+    # --save "" and --appendonly no: disable persistence so no BGSAVE fork noise
+    # lands in the middle of a benchmark run (documented decision for the paper)
+    command: ["redis-server", "--protected-mode", "no", "--save", "", "--appendonly", "no"]
+    networks: [tp2-net]
+
+  redis2:
+    image: redis:7.4
+    container_name: redis2
+    command: ["redis-server", "--protected-mode", "no", "--save", "", "--appendonly", "no",
+              "--replicaof", "redis1", "6379"]
+    networks: [tp2-net]
+
+  redis3:
+    image: redis:7.4
+    container_name: redis3
+    command: ["redis-server", "--protected-mode", "no", "--save", "", "--appendonly", "no",
+              "--replicaof", "redis1", "6379"]
+    networks: [tp2-net]

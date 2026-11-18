@@ -45,7 +45,7 @@ Docker Desktop 4.36.0 / Docker Engine 27.3.1 (WSL2 backend), data on drive D:.
 
 - [ ] Choose team name
 - [ ] Define custom workload scenario (needed for ALL databases; Mongo must re-run a custom-workload pass)
-- [ ] Redis: scripts + 3-node runs + 5-node runs (owner: Dung)
+- [x] Redis: scripts written + smoke-tested locally (owner: Dung) — recorded runs on the test machine pending
 - [ ] Cassandra: scripts + runs (after Redis)
 - [ ] Push Mongo files + results from teammate's machine into `mongo/` and `results/`
 - [ ] Stats (mean, CI) + plots from the CSVs

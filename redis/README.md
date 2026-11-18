@@ -1,10 +1,18 @@
-# Redis — 1 master + N replicas (IN PROGRESS)
+# Redis — 1 master + N replicas
 
-Status: scripts being written (owner: Dung). Target: exact parameter parity with `mongo/`.
+Status: scripts complete (`run_redis.sh`, `docker-compose-redis-3.yml`,
+`docker-compose-redis-5.yml`, `redis.conf`). Smoke-tested on macOS (M2, colima/vz) with
+tiny parameters — smoke results were discarded. **Recorded runs must happen on the shared
+test machine** (same box as the Mongo experiments), full defaults, via:
 
-Files planned here: `run_redis.sh`, `docker-compose-redis-3.yml`, `docker-compose-redis-5.yml`,
-`redis.conf` (the assignment requires submitting redis.conf — if configuring via CLI flags,
-keep an equivalent redis.conf here for submission).
+```bash
+./run_redis.sh                       # full: 2 configs x A–E x 10 reps
+# smoke: RECORDCOUNT=1000 OPERATIONCOUNT=1000 REPS=1 WORKLOADS="workloada" NODE_CONFIGS="3" ./run_redis.sh
+```
+
+Decisions pinned (document these in the paper): image `redis:7.4`; persistence disabled
+(`--save "" --appendonly no`) to keep BGSAVE fork noise out of the measurements; no CPU/RAM
+limits (parity with Mongo); resumable — finished (workload, rep) pairs are skipped on restart.
 
 ## Setup
 
