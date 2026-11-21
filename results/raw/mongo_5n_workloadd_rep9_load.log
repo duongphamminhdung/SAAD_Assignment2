@@ -1,0 +1,625 @@
+/opt/java/openjdk/bin/java  -classpath /ycsb/conf:/ycsb/lib/HdrHistogram-2.1.4.jar:/ycsb/lib/core-0.17.0.jar:/ycsb/lib/htrace-core4-4.1.0-incubating.jar:/ycsb/lib/jackson-core-asl-1.9.4.jar:/ycsb/lib/jackson-mapper-asl-1.9.4.jar:/ycsb/mongodb-binding/lib/logback-classic-1.1.2.jar:/ycsb/mongodb-binding/lib/logback-core-1.1.2.jar:/ycsb/mongodb-binding/lib/mongo-java-driver-3.8.0.jar:/ycsb/mongodb-binding/lib/mongodb-async-driver-2.0.1.jar:/ycsb/mongodb-binding/lib/mongodb-binding-0.17.0.jar:/ycsb/mongodb-binding/lib/slf4j-api-1.7.25.jar:/ycsb/mongodb-binding/lib/snappy-java-1.1.7.1.jar site.ycsb.Client -load -db site.ycsb.db.MongoDbClient -P workloads/workloadd -p mongodb.url=mongodb://mongo1:27017,mongo2:27017,mongo3:27017,mongo4:27017,mongo5:27017/ycsb?replicaSet=rs0&w=majority -p recordcount=100000 -p operationcount=100000 -threads 16
+Command line: -load -db site.ycsb.db.MongoDbClient -P workloads/workloadd -p mongodb.url=mongodb://mongo1:27017,mongo2:27017,mongo3:27017,mongo4:27017,mongo5:27017/ycsb?replicaSet=rs0&w=majority -p recordcount=100000 -p operationcount=100000 -threads 16
+YCSB Client 0.17.0
+
+Loading workload...
+Starting test.
+mongo client connection created with mongodb://mongo1:27017,mongo2:27017,mongo3:27017,mongo4:27017,mongo5:27017/ycsb?replicaSet=rs0&w=majority
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+20:43:47.014 [Thread-1] WARN  org.mongodb.driver.connection - Got socket exception on connection [connectionId{localValue:13}] to mongo1:27017. All connections to mongo1:27017 will be closed.
+20:43:47.014 [Thread-13] WARN  org.mongodb.driver.connection - Got socket exception on connection [connectionId{localValue:20}] to mongo1:27017. All connections to mongo1:27017 will be closed.
+20:43:47.016 [Thread-14] WARN  org.mongodb.driver.connection - Got socket exception on connection [connectionId{localValue:11}] to mongo1:27017. All connections to mongo1:27017 will be closed.
+20:43:47.016 [Thread-9] WARN  org.mongodb.driver.connection - Got socket exception on connection [connectionId{localValue:18}] to mongo1:27017. All connections to mongo1:27017 will be closed.
+20:43:47.016 [Thread-7] WARN  org.mongodb.driver.connection - Got socket exception on connection [connectionId{localValue:21}] to mongo1:27017. All connections to mongo1:27017 will be closed.
+20:43:47.016 [Thread-15] WARN  org.mongodb.driver.connection - Got socket exception on connection [connectionId{localValue:17}] to mongo1:27017. All connections to mongo1:27017 will be closed.
+20:43:47.016 [Thread-3] WARN  org.mongodb.driver.connection - Got socket exception on connection [connectionId{localValue:9}] to mongo1:27017. All connections to mongo1:27017 will be closed.
+20:43:47.016 [Thread-16] WARN  org.mongodb.driver.connection - Got socket exception on connection [connectionId{localValue:12}] to mongo1:27017. All connections to mongo1:27017 will be closed.
+20:43:47.014 [Thread-1] WARN  org.mongodb.driver.connection - Got socket exception on connection [connectionId{localValue:13}] to mongo1:27017. All connections to mongo1:27017 will be closed.
+20:43:47.016 [Thread-4] WARN  org.mongodb.driver.connection - Got socket exception on connection [connectionId{localValue:19}] to mongo1:27017. All connections to mongo1:27017 will be closed.
+20:43:47.016 [Thread-5] WARN  org.mongodb.driver.connection - Got socket exception on connection [connectionId{localValue:8}] to mongo1:27017. All connections to mongo1:27017 will be closed.
+20:43:47.016 [Thread-8] WARN  org.mongodb.driver.connection - Got socket exception on connection [connectionId{localValue:7}] to mongo1:27017. All connections to mongo1:27017 will be closed.
+20:43:47.014 [Thread-10] WARN  org.mongodb.driver.connection - Got socket exception on connection [connectionId{localValue:15}] to mongo1:27017. All connections to mongo1:27017 will be closed.
+20:43:47.014 [Thread-12] WARN  org.mongodb.driver.connection - Got socket exception on connection [connectionId{localValue:14}] to mongo1:27017. All connections to mongo1:27017 will be closed.
+20:43:47.014 [Thread-11] WARN  org.mongodb.driver.connection - Got socket exception on connection [connectionId{localValue:6}] to mongo1:27017. All connections to mongo1:27017 will be closed.
+20:43:47.014 [Thread-6] WARN  org.mongodb.driver.connection - Got socket exception on connection [connectionId{localValue:16}] to mongo1:27017. All connections to mongo1:27017 will be closed.
+20:43:47.016 [Thread-2] WARN  org.mongodb.driver.connection - Got socket exception on connection [connectionId{localValue:10}] to mongo1:27017. All connections to mongo1:27017 will be closed.
+20:43:47.014 [Thread-13] WARN  org.mongodb.driver.connection - Got socket exception on connection [connectionId{localValue:20}] to mongo1:27017. All connections to mongo1:27017 will be closed.
+20:43:47.016 [Thread-14] WARN  org.mongodb.driver.connection - Got socket exception on connection [connectionId{localValue:11}] to mongo1:27017. All connections to mongo1:27017 will be closed.
+20:43:47.016 [Thread-9] WARN  org.mongodb.driver.connection - Got socket exception on connection [connectionId{localValue:18}] to mongo1:27017. All connections to mongo1:27017 will be closed.
+Exception while trying bulk insert with 0
+Exception while trying bulk insert with 0
+com.mongodb.MongoSocketReadException: Prematurely reached end of stream
+20:43:47.016 [Thread-7] WARN  org.mongodb.driver.connection - Got socket exception on connection [connectionId{localValue:21}] to mongo1:27017. All connections to mongo1:27017 will be closed.
+20:43:47.016 [Thread-16] WARN  org.mongodb.driver.connection - Got socket exception on connection [connectionId{localValue:12}] to mongo1:27017. All connections to mongo1:27017 will be closed.
+20:43:47.016 [Thread-3] WARN  org.mongodb.driver.connection - Got socket exception on connection [connectionId{localValue:9}] to mongo1:27017. All connections to mongo1:27017 will be closed.
+20:43:47.016 [Thread-4] WARN  org.mongodb.driver.connection - Got socket exception on connection [connectionId{localValue:19}] to mongo1:27017. All connections to mongo1:27017 will be closed.
+20:43:47.016 [Thread-5] WARN  org.mongodb.driver.connection - Got socket exception on connection [connectionId{localValue:8}] to mongo1:27017. All connections to mongo1:27017 will be closed.
+	at com.mongodb.internal.connection.SocketStream.read(SocketStream.java:92)
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveResponseBuffers(InternalStreamConnection.java:554)
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveMessage(InternalStreamConnection.java:425)
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveCommandMessageResponse(InternalStreamConnection.java:289)
+	at com.mongodb.internal.connection.InternalStreamConnection.sendAndReceive(InternalStreamConnection.java:255)
+	at com.mongodb.internal.connection.UsageTrackingInternalConnection.sendAndReceive(UsageTrackingInternalConnection.java:99)
+	at com.mongodb.internal.connection.DefaultConnectionPool$PooledConnection.sendAndReceive(DefaultConnectionPool.java:444)
+	at com.mongodb.internal.connection.CommandProtocolImpl.execute(CommandProtocolImpl.java:72)20:43:47.016 [Thread-8] WARN  org.mongodb.driver.connection - Got socket exception on connection [connectionId{localValue:7}] to mongo1:27017. All connections to mongo1:27017 will be closed.
+20:43:47.014 [Thread-10] WARN  org.mongodb.driver.connection - Got socket exception on connection [connectionId{localValue:15}] to mongo1:27017. All connections to mongo1:27017 will be closed.
+20:43:47.016 [Thread-15] WARN  org.mongodb.driver.connection - Got socket exception on connection [connectionId{localValue:17}] to mongo1:27017. All connections to mongo1:27017 will be closed.
+20:43:47.014 [Thread-6] WARN  org.mongodb.driver.connection - Got socket exception on connection [connectionId{localValue:16}] to mongo1:27017. All connections to mongo1:27017 will be closed.
+20:43:47.014 [Thread-12] WARN  org.mongodb.driver.connection - Got socket exception on connection [connectionId{localValue:14}] to mongo1:27017. All connections to mongo1:27017 will be closed.
+20:43:47.014 [Thread-11] WARN  org.mongodb.driver.connection - Got socket exception on connection [connectionId{localValue:6}] to mongo1:27017. All connections to mongo1:27017 will be closed.
+20:43:47.016 [Thread-2] WARN  org.mongodb.driver.connection - Got socket exception on connection [connectionId{localValue:10}] to mongo1:27017. All connections to mongo1:27017 will be closed.
+
+	at com.mongodb.internal.connection.DefaultServer$DefaultServerProtocolExecutor.execute(DefaultServer.java:200)
+	at com.mongodb.internal.connection.DefaultServerConnection.executeProtocol(DefaultServerConnection.java:269)
+	at com.mongodb.internal.connection.DefaultServerConnection.command(DefaultServerConnection.java:131)
+	at com.mongodb.operation.MixedBulkWriteOperation.executeCommand(MixedBulkWriteOperation.java:418)
+	at com.mongodb.operation.MixedBulkWriteOperation.executeBulkWriteBatch(MixedBulkWriteOperation.java:256)
+	at com.mongodb.operation.MixedBulkWriteOperation.access$700(MixedBulkWriteOperation.java:67)
+	at com.mongodb.operation.MixedBulkWriteOperation$1.call(MixedBulkWriteOperation.java:200)
+	at com.mongodb.operation.MixedBulkWriteOperation$1.call(MixedBulkWriteOperation.java:191)
+	at com.mongodb.operation.OperationHelper.withReleasableConnection(OperationHelper.java:419)
+	at com.mongodb.operation.MixedBulkWriteOperation.execute(MixedBulkWriteOperation.java:191)
+	at com.mongodb.operation.MixedBulkWriteOperation.execute(MixedBulkWriteOperation.java:67)
+	at com.mongodb.client.internal.MongoClientDelegate$DelegateOperationExecutor.execute(MongoClientDelegate.java:193)
+	at com.mongodb.client.internal.MongoCollectionImpl.executeSingleWriteRequest(MongoCollectionImpl.java:960)
+	at com.mongodb.client.internal.MongoCollectionImpl.executeInsertOne(MongoCollectionImpl.java:494)
+	at com.mongodb.client.internal.MongoCollectionImpl.insertOne(MongoCollectionImpl.java:478)
+	at com.mongodb.client.internal.MongoCollectionImpl.insertOne(MongoCollectionImpl.java:472)
+	at site.ycsb.db.MongoDbClient.insert(MongoDbClient.java:270)
+	at site.ycsb.DBWrapper.insert(DBWrapper.java:221)
+	at site.ycsb.workloads.CoreWorkload.doInsert(CoreWorkload.java:601)
+	at site.ycsb.ClientThread.run(ClientThread.java:135)
+	at java.base/java.lang.Thread.run(Unknown Source)
+Exception while trying bulk insert with 0
+com.mongodb.MongoSocketReadException: Prematurely reached end of stream
+	at com.mongodb.internal.connection.SocketStream.read(SocketStream.java:92)
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveResponseBuffers(InternalStreamConnection.java:554)
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveMessage(InternalStreamConnection.java:425)
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveCommandMessageResponse(InternalStreamConnection.java:289)
+	at com.mongodb.internal.connection.InternalStreamConnection.sendAndReceive(InternalStreamConnection.java:255)
+	at com.mongodb.internal.connection.UsageTrackingInternalConnection.sendAndReceive(UsageTrackingInternalConnection.java:99)
+	at com.mongodb.internal.connection.DefaultConnectionPool$PooledConnection.sendAndReceive(DefaultConnectionPool.java:444)
+	at com.mongodb.internal.connection.CommandProtocolImpl.execute(CommandProtocolImpl.java:72)
+	at com.mongodb.internal.connection.DefaultServer$DefaultServerProtocolExecutor.execute(DefaultServer.java:200)
+	at com.mongodb.internal.connection.DefaultServerConnection.executeProtocol(DefaultServerConnection.java:269)
+	at com.mongodb.internal.connection.DefaultServerConnection.command(DefaultServerConnection.java:131)
+	at com.mongodb.operation.MixedBulkWriteOperation.executeCommand(MixedBulkWriteOperation.java:418)
+	at com.mongodb.operation.MixedBulkWriteOperation.executeBulkWriteBatch(MixedBulkWriteOperation.java:256)
+	at com.mongodb.operation.MixedBulkWriteOperation.access$700(MixedBulkWriteOperation.java:67)
+	at com.mongodb.operation.MixedBulkWriteOperation$1.call(MixedBulkWriteOperation.java:200)
+	at com.mongodb.operation.MixedBulkWriteOperation$1.call(MixedBulkWriteOperation.java:191)
+	at com.mongodb.operation.OperationHelper.withReleasableConnection(OperationHelper.java:419)
+	at com.mongodb.operation.MixedBulkWriteOperation.execute(MixedBulkWriteOperation.java:191)
+	at com.mongodb.operation.MixedBulkWriteOperation.execute(MixedBulkWriteOperation.java:67)
+	at com.mongodb.client.internal.MongoClientDelegate$DelegateOperationExecutor.execute(MongoClientDelegate.java:193)
+	at com.mongodb.client.internal.MongoCollectionImpl.executeSingleWriteRequest(MongoCollectionImpl.java:960)
+	at com.mongodb.client.internal.MongoCollectionImpl.executeInsertOne(MongoCollectionImpl.java:494)
+	at com.mongodb.client.internal.MongoCollectionImpl.insertOne(MongoCollectionImpl.java:478)
+	at com.mongodb.client.internal.MongoCollectionImpl.insertOne(MongoCollectionImpl.java:472)
+	at site.ycsb.db.MongoDbClient.insert(MongoDbClient.java:270)
+	at site.ycsb.DBWrapper.insert(DBWrapper.java:221)
+	at site.ycsb.workloads.CoreWorkload.doInsert(CoreWorkload.java:601)
+	at site.ycsb.ClientThread.run(ClientThread.java:135)
+	at java.base/java.lang.Thread.run(Unknown Source)
+Exception while trying bulk insert with 0
+Error inserting, not retrying any more. number of attempts: 1Insertion Retry Limit: 0
+Exception while trying bulk insert with 0
+com.mongodb.MongoSocketReadException: Prematurely reached end of stream
+	at com.mongodb.internal.connection.SocketStream.read(SocketStream.java:92)
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveResponseBuffers(InternalStreamConnection.java:554)
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveMessage(InternalStreamConnection.java:425)
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveCommandMessageResponse(InternalStreamConnection.java:289)
+	at com.mongodb.internal.connection.InternalStreamConnection.sendAndReceive(InternalStreamConnection.java:255)
+	at com.mongodb.internal.connection.UsageTrackingInternalConnection.sendAndReceive(UsageTrackingInternalConnection.java:99)
+	at com.mongodb.internal.connection.DefaultConnectionPool$PooledConnection.sendAndReceive(DefaultConnectionPool.java:444)
+	at com.mongodb.internal.connection.CommandProtocolImpl.execute(CommandProtocolImpl.java:72)
+	at com.mongodb.internal.connection.DefaultServer$DefaultServerProtocolExecutor.execute(DefaultServer.java:200)
+	at com.mongodb.internal.connection.DefaultServerConnection.executeProtocol(DefaultServerConnection.java:269)
+	at com.mongodb.internal.connection.DefaultServerConnection.command(DefaultServerConnection.java:131)
+	at com.mongodb.operation.MixedBulkWriteOperation.executeCommand(MixedBulkWriteOperation.java:418)
+	at com.mongodb.operation.MixedBulkWriteOperation.executeBulkWriteBatch(MixedBulkWriteOperation.java:256)
+	at com.mongodb.operation.MixedBulkWriteOperation.access$700(MixedBulkWriteOperation.java:67)
+	at com.mongodb.operation.MixedBulkWriteOperation$1.call(MixedBulkWriteOperation.java:200)
+	at com.mongodb.operation.MixedBulkWriteOperation$1.call(MixedBulkWriteOperation.java:191)
+	at com.mongodb.operation.OperationHelper.withReleasableConnection(OperationHelper.java:419)
+	at com.mongodb.operation.MixedBulkWriteOperation.execute(MixedBulkWriteOperation.java:191)
+	at com.mongodb.operation.MixedBulkWriteOperation.execute(MixedBulkWriteOperation.java:67)
+	at com.mongodb.client.internal.MongoClientDelegate$DelegateOperationExecutor.execute(MongoClientDelegate.java:193)
+	at com.mongodb.client.internal.MongoCollectionImpl.executeSingleWriteRequest(MongoCollectionImpl.java:960)
+	at com.mongodb.client.internal.MongoCollectionImpl.executeInsertOne(MongoCollectionImpl.java:494)
+	at com.mongodb.client.internal.MongoCollectionImpl.insertOne(MongoCollectionImpl.java:478)
+	at com.mongodb.client.internal.MongoCollectionImpl.insertOne(MongoCollectionImpl.java:472)
+	at site.ycsb.db.MongoDbClient.insert(MongoDbClient.java:270)
+	at site.ycsb.DBWrapper.insert(DBWrapper.java:221)
+	at site.ycsb.workloads.CoreWorkload.doInsert(CoreWorkload.java:601)
+	at site.ycsb.ClientThread.run(ClientThread.java:135)
+	at java.base/java.lang.Thread.run(Unknown Source)
+Error inserting, not retrying any more. number of attempts: 1Insertion Retry Limit: 0
+Exception while trying bulk insert with 0
+com.mongodb.MongoSocketReadException: Prematurely reached end of stream
+	at com.mongodb.internal.connection.SocketStream.read(SocketStream.java:92)
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveResponseBuffers(InternalStreamConnection.java:554)
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveMessage(InternalStreamConnection.java:425)
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveCommandMessageResponse(InternalStreamConnection.java:289)
+	at com.mongodb.internal.connection.InternalStreamConnection.sendAndReceive(InternalStreamConnection.java:255)
+	at com.mongodb.internal.connection.UsageTrackingInternalConnection.sendAndReceive(UsageTrackingInternalConnection.java:99)
+	at com.mongodb.internal.connection.DefaultConnectionPool$PooledConnection.sendAndReceive(DefaultConnectionPool.java:444)
+	at com.mongodb.internal.connection.CommandProtocolImpl.execute(CommandProtocolImpl.java:72)
+	at com.mongodb.internal.connection.DefaultServer$DefaultServerProtocolExecutor.execute(DefaultServer.java:200)
+	at com.mongodb.internal.connection.DefaultServerConnection.executeProtocol(DefaultServerConnection.java:269)
+	at com.mongodb.internal.connection.DefaultServerConnection.command(DefaultServerConnection.java:131)
+	at com.mongodb.operation.MixedBulkWriteOperation.executeCommand(MixedBulkWriteOperation.java:418)
+	at com.mongodb.operation.MixedBulkWriteOperation.executeBulkWriteBatch(MixedBulkWriteOperation.java:256)
+	at com.mongodb.operation.MixedBulkWriteOperation.access$700(MixedBulkWriteOperation.java:67)
+	at com.mongodb.operation.MixedBulkWriteOperation$1.call(MixedBulkWriteOperation.java:200)
+	at com.mongodb.operation.MixedBulkWriteOperation$1.call(MixedBulkWriteOperation.java:191)
+	at com.mongodb.operation.OperationHelper.withReleasableConnection(OperationHelper.java:419)
+	at com.mongodb.operation.MixedBulkWriteOperation.execute(MixedBulkWriteOperation.java:191)
+	at com.mongodb.operation.MixedBulkWriteOperation.execute(MixedBulkWriteOperation.java:67)
+	at com.mongodb.client.internal.MongoClientDelegate$DelegateOperationExecutor.execute(MongoClientDelegate.java:193)
+	at com.mongodb.client.internal.MongoCollectionImpl.executeSingleWriteRequest(MongoCollectionImpl.java:960)
+	at com.mongodb.client.internal.MongoCollectionImpl.executeInsertOne(MongoCollectionImpl.java:494)
+	at com.mongodb.client.internal.MongoCollectionImpl.insertOne(MongoCollectionImpl.java:478)
+	at com.mongodb.client.internal.MongoCollectionImpl.insertOne(MongoCollectionImpl.java:472)
+	at site.ycsb.db.MongoDbClient.insert(MongoDbClient.java:270)
+	at site.ycsb.DBWrapper.insert(DBWrapper.java:221)
+	at site.ycsb.workloads.CoreWorkload.doInsert(CoreWorkload.java:601)
+	at site.ycsb.ClientThread.run(ClientThread.java:135)
+	at java.base/java.lang.Thread.run(Unknown Source)
+Exception while trying bulk insert with 0
+com.mongodb.MongoSocketReadException: Prematurely reached end of stream
+	at com.mongodb.internal.connection.SocketStream.read(SocketStream.java:92)
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveResponseBuffers(InternalStreamConnection.java:554)
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveMessage(InternalStreamConnection.java:425)
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveCommandMessageResponse(InternalStreamConnection.java:289)
+	at com.mongodb.internal.connection.InternalStreamConnection.sendAndReceive(InternalStreamConnection.java:255)
+	at com.mongodb.internal.connection.UsageTrackingInternalConnection.sendAndReceive(UsageTrackingInternalConnection.java:99)
+	at com.mongodb.internal.connection.DefaultConnectionPool$PooledConnection.sendAndReceive(DefaultConnectionPool.java:444)
+	at com.mongodb.internal.connection.CommandProtocolImpl.execute(CommandProtocolImpl.java:72)
+	at com.mongodb.internal.connection.DefaultServer$DefaultServerProtocolExecutor.execute(DefaultServer.java:200)
+	at com.mongodb.internal.connection.DefaultServerConnection.executeProtocol(DefaultServerConnection.java:269)
+	at com.mongodb.internal.connection.DefaultServerConnection.command(DefaultServerConnection.java:131)
+	at com.mongodb.operation.MixedBulkWriteOperation.executeCommand(MixedBulkWriteOperation.java:418)
+	at com.mongodb.operation.MixedBulkWriteOperation.executeBulkWriteBatch(MixedBulkWriteOperation.java:256)
+	at com.mongodb.operation.MixedBulkWriteOperation.access$700(MixedBulkWriteOperation.java:67)
+	at com.mongodb.operation.MixedBulkWriteOperation$1.call(MixedBulkWriteOperation.java:200)
+	at com.mongodb.operation.MixedBulkWriteOperation$1.call(MixedBulkWriteOperation.java:191)
+	at com.mongodb.operation.OperationHelper.withReleasableConnection(OperationHelper.java:419)
+	at com.mongodb.operation.MixedBulkWriteOperation.execute(MixedBulkWriteOperation.java:191)
+	at com.mongodb.operation.MixedBulkWriteOperation.execute(MixedBulkWriteOperation.java:67)
+	at com.mongodb.client.internal.MongoClientDelegate$DelegateOperationExecutor.execute(MongoClientDelegate.java:193)
+	at com.mongodb.client.internal.MongoCollectionImpl.executeSingleWriteRequest(MongoCollectionImpl.java:960)
+	at com.mongodb.client.internal.MongoCollectionImpl.executeInsertOne(MongoCollectionImpl.java:494)
+	at com.mongodb.client.internal.MongoCollectionImpl.insertOne(MongoCollectionImpl.java:478)
+	at com.mongodb.client.internal.MongoCollectionImpl.insertOne(MongoCollectionImpl.java:472)
+	at site.ycsb.db.MongoDbClient.insert(MongoDbClient.java:270)
+	at site.ycsb.DBWrapper.insert(DBWrapper.java:221)
+	at site.ycsb.workloads.CoreWorkload.doInsert(CoreWorkload.java:601)
+	at site.ycsb.ClientThread.run(ClientThread.java:135)
+	at java.base/java.lang.Thread.run(Unknown Source)
+Exception while trying bulk insert with 0
+Exception while trying bulk insert with 0
+com.mongodb.MongoSocketReadException: Prematurely reached end of stream
+	at com.mongodb.internal.connection.SocketStream.read(SocketStream.java:92)
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveResponseBuffers(InternalStreamConnection.java:554)
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveMessage(InternalStreamConnection.java:425)
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveCommandMessageResponse(InternalStreamConnection.java:289)
+	at com.mongodb.internal.connection.InternalStreamConnection.sendAndReceive(InternalStreamConnection.java:255)
+	at com.mongodb.internal.connection.UsageTrackingInternalConnection.sendAndReceive(UsageTrackingInternalConnection.java:99)
+	at com.mongodb.internal.connection.DefaultConnectionPool$PooledConnection.sendAndReceive(DefaultConnectionPool.java:444)
+	at com.mongodb.internal.connection.CommandProtocolImpl.execute(CommandProtocolImpl.java:72)
+	at com.mongodb.internal.connection.DefaultServer$DefaultServerProtocolExecutor.execute(DefaultServer.java:200)
+	at com.mongodb.internal.connection.DefaultServerConnection.executeProtocol(DefaultServerConnection.java:269)
+	at com.mongodb.internal.connection.DefaultServerConnection.command(DefaultServerConnection.java:131)
+	at com.mongodb.operation.MixedBulkWriteOperation.executeCommand(MixedBulkWriteOperation.java:418)
+	at com.mongodb.operation.MixedBulkWriteOperation.executeBulkWriteBatch(MixedBulkWriteOperation.java:256)
+	at com.mongodb.operation.MixedBulkWriteOperation.access$700(MixedBulkWriteOperation.java:67)
+	at com.mongodb.operation.MixedBulkWriteOperation$1.call(MixedBulkWriteOperation.java:200)
+	at com.mongodb.operation.MixedBulkWriteOperation$1.call(MixedBulkWriteOperation.java:191)
+	at com.mongodb.operation.OperationHelper.withReleasableConnection(OperationHelper.java:419)
+	at com.mongodb.operation.MixedBulkWriteOperation.execute(MixedBulkWriteOperation.java:191)
+	at com.mongodb.operation.MixedBulkWriteOperation.execute(MixedBulkWriteOperation.java:67)
+	at com.mongodb.client.internal.MongoClientDelegate$DelegateOperationExecutor.execute(MongoClientDelegate.java:193)
+	at com.mongodb.client.internal.MongoCollectionImpl.executeSingleWriteRequest(MongoCollectionImpl.java:960)
+	at com.mongodb.client.internal.MongoCollectionImpl.executeInsertOne(MongoCollectionImpl.java:494)
+	at com.mongodb.client.internal.MongoCollectionImpl.insertOne(MongoCollectionImpl.java:478)
+	at com.mongodb.client.internal.MongoCollectionImpl.insertOne(MongoCollectionImpl.java:472)
+	at site.ycsb.db.MongoDbClient.insert(MongoDbClient.java:270)
+	at site.ycsb.DBWrapper.insert(DBWrapper.java:221)
+	at site.ycsb.workloads.CoreWorkload.doInsert(CoreWorkload.java:601)
+	at site.ycsb.ClientThread.run(ClientThread.java:135)
+	at java.base/java.lang.Thread.run(Unknown Source)
+Exception while trying bulk insert with 0
+com.mongodb.MongoSocketReadException: Prematurely reached end of stream
+	at com.mongodb.internal.connection.SocketStream.read(SocketStream.java:92)
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveResponseBuffers(InternalStreamConnection.java:554)
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveMessage(InternalStreamConnection.java:425)
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveCommandMessageResponse(InternalStreamConnection.java:289)
+	at com.mongodb.internal.connection.InternalStreamConnection.sendAndReceive(InternalStreamConnection.java:255)
+	at com.mongodb.internal.connection.UsageTrackingInternalConnection.sendAndReceive(UsageTrackingInternalConnection.java:99)
+	at com.mongodb.internal.connection.DefaultConnectionPool$PooledConnection.sendAndReceive(DefaultConnectionPool.java:444)
+	at com.mongodb.internal.connection.CommandProtocolImpl.execute(CommandProtocolImpl.java:72)
+	at com.mongodb.internal.connection.DefaultServer$DefaultServerProtocolExecutor.execute(DefaultServer.java:200)
+	at com.mongodb.internal.connection.DefaultServerConnection.executeProtocol(DefaultServerConnection.java:269)
+	at com.mongodb.internal.connection.DefaultServerConnection.command(DefaultServerConnection.java:131)
+	at com.mongodb.operation.MixedBulkWriteOperation.executeCommand(MixedBulkWriteOperation.java:418)
+	at com.mongodb.operation.MixedBulkWriteOperation.executeBulkWriteBatch(MixedBulkWriteOperation.java:256)
+	at com.mongodb.operation.MixedBulkWriteOperation.access$700(MixedBulkWriteOperation.java:67)
+	at com.mongodb.operation.MixedBulkWriteOperation$1.call(MixedBulkWriteOperation.java:200)
+	at com.mongodb.operation.MixedBulkWriteOperation$1.call(MixedBulkWriteOperation.java:191)
+	at com.mongodb.operation.OperationHelper.withReleasableConnection(OperationHelper.java:419)
+	at com.mongodb.operation.MixedBulkWriteOperation.execute(MixedBulkWriteOperation.java:191)
+	at com.mongodb.operation.MixedBulkWriteOperation.execute(MixedBulkWriteOperation.java:67)
+	at com.mongodb.client.internal.MongoClientDelegate$DelegateOperationExecutor.execute(MongoClientDelegate.java:193)
+	at com.mongodb.client.internal.MongoCollectionImpl.executeSingleWriteRequest(MongoCollectionImpl.java:960)
+	at com.mongodb.client.internal.MongoCollectionImpl.executeInsertOne(MongoCollectionImpl.java:494)
+	at com.mongodb.client.internal.MongoCollectionImpl.insertOne(MongoCollectionImpl.java:478)
+	at com.mongodb.client.internal.MongoCollectionImpl.insertOne(MongoCollectionImpl.java:472)
+	at site.ycsb.db.MongoDbClient.insert(MongoDbClient.java:270)
+	at site.ycsb.DBWrapper.insert(DBWrapper.java:221)
+	at site.ycsb.workloads.CoreWorkload.doInsert(CoreWorkload.java:601)
+	at site.ycsb.ClientThread.run(ClientThread.java:135)
+	at java.base/java.lang.Thread.run(Unknown Source)
+Exception while trying bulk insert with 0
+Exception while trying bulk insert with 0
+com.mongodb.MongoSocketReadException: Prematurely reached end of stream
+	at com.mongodb.internal.connection.SocketStream.read(SocketStream.java:92)
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveResponseBuffers(InternalStreamConnection.java:554)
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveMessage(InternalStreamConnection.java:425)
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveCommandMessageResponse(InternalStreamConnection.java:289)
+	at com.mongodb.internal.connection.InternalStreamConnection.sendAndReceive(InternalStreamConnection.java:255)
+	at com.mongodb.internal.connection.UsageTrackingInternalConnection.sendAndReceive(UsageTrackingInternalConnection.java:99)
+	at com.mongodb.internal.connection.DefaultConnectionPool$PooledConnection.sendAndReceive(DefaultConnectionPool.java:444)
+	at com.mongodb.internal.connection.CommandProtocolImpl.execute(CommandProtocolImpl.java:72)
+	at com.mongodb.internal.connection.DefaultServer$DefaultServerProtocolExecutor.execute(DefaultServer.java:200)
+	at com.mongodb.internal.connection.DefaultServerConnection.executeProtocol(DefaultServerConnection.java:269)
+	at com.mongodb.internal.connection.DefaultServerConnection.command(DefaultServerConnection.java:131)
+	at com.mongodb.operation.MixedBulkWriteOperation.executeCommand(MixedBulkWriteOperation.java:418)
+	at com.mongodb.operation.MixedBulkWriteOperation.executeBulkWriteBatch(MixedBulkWriteOperation.java:256)
+	at com.mongodb.operation.MixedBulkWriteOperation.access$700(MixedBulkWriteOperation.java:67)
+	at com.mongodb.operation.MixedBulkWriteOperation$1.call(MixedBulkWriteOperation.java:200)
+	at com.mongodb.operation.MixedBulkWriteOperation$1.call(MixedBulkWriteOperation.java:191)
+	at com.mongodb.operation.OperationHelper.withReleasableConnection(OperationHelper.java:419)
+	at com.mongodb.operation.MixedBulkWriteOperation.execute(MixedBulkWriteOperation.java:191)
+	at com.mongodb.operation.MixedBulkWriteOperation.execute(MixedBulkWriteOperation.java:67)
+	at com.mongodb.client.internal.MongoClientDelegate$DelegateOperationExecutor.execute(MongoClientDelegate.java:193)
+	at com.mongodb.client.internal.MongoCollectionImpl.executeSingleWriteRequest(MongoCollectionImpl.java:960)
+	at com.mongodb.client.internal.MongoCollectionImpl.executeInsertOne(MongoCollectionImpl.java:494)
+	at com.mongodb.client.internal.MongoCollectionImpl.insertOne(MongoCollectionImpl.java:478)
+	at com.mongodb.client.internal.MongoCollectionImpl.insertOne(MongoCollectionImpl.java:472)
+	at site.ycsb.db.MongoDbClient.insert(MongoDbClient.java:270)
+	at site.ycsb.DBWrapper.insert(DBWrapper.java:221)
+	at site.ycsb.workloads.CoreWorkload.doInsert(CoreWorkload.java:601)
+	at site.ycsb.ClientThread.run(ClientThread.java:135)
+	at java.base/java.lang.Thread.run(Unknown Source)
+Exception while trying bulk insert with 0
+com.mongodb.MongoSocketReadException: Prematurely reached end of stream
+	at com.mongodb.internal.connection.SocketStream.read(SocketStream.java:92)
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveResponseBuffers(InternalStreamConnection.java:554)
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveMessage(InternalStreamConnection.java:425)
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveCommandMessageResponse(InternalStreamConnection.java:289)
+	at com.mongodb.internal.connection.InternalStreamConnection.sendAndReceive(InternalStreamConnection.java:255)
+	at com.mongodb.internal.connection.UsageTrackingInternalConnection.sendAndReceive(UsageTrackingInternalConnection.java:99)
+	at com.mongodb.internal.connection.DefaultConnectionPool$PooledConnection.sendAndReceive(DefaultConnectionPool.java:444)
+	at com.mongodb.internal.connection.CommandProtocolImpl.execute(CommandProtocolImpl.java:72)
+	at com.mongodb.internal.connection.DefaultServer$DefaultServerProtocolExecutor.execute(DefaultServer.java:200)
+	at com.mongodb.internal.connection.DefaultServerConnection.executeProtocol(DefaultServerConnection.java:269)
+	at com.mongodb.internal.connection.DefaultServerConnection.command(DefaultServerConnection.java:131)
+	at com.mongodb.operation.MixedBulkWriteOperation.executeCommand(MixedBulkWriteOperation.java:418)
+	at com.mongodb.operation.MixedBulkWriteOperation.executeBulkWriteBatch(MixedBulkWriteOperation.java:256)
+	at com.mongodb.operation.MixedBulkWriteOperation.access$700(MixedBulkWriteOperation.java:67)
+	at com.mongodb.operation.MixedBulkWriteOperation$1.call(MixedBulkWriteOperation.java:200)
+	at com.mongodb.operation.MixedBulkWriteOperation$1.call(MixedBulkWriteOperation.java:191)
+	at com.mongodb.operation.OperationHelper.withReleasableConnection(OperationHelper.java:419)
+	at com.mongodb.operation.MixedBulkWriteOperation.execute(MixedBulkWriteOperation.java:191)
+	at com.mongodb.operation.MixedBulkWriteOperation.execute(MixedBulkWriteOperation.java:67)
+	at com.mongodb.client.internal.MongoClientDelegate$DelegateOperationExecutor.execute(MongoClientDelegate.java:193)
+	at com.mongodb.client.internal.MongoCollectionImpl.executeSingleWriteRequest(MongoCollectionImpl.java:960)
+	at com.mongodb.client.internal.MongoCollectionImpl.executeInsertOne(MongoCollectionImpl.java:494)
+	at com.mongodb.client.internal.MongoCollectionImpl.insertOne(MongoCollectionImpl.java:478)
+	at com.mongodb.client.internal.MongoCollectionImpl.insertOne(MongoCollectionImpl.java:472)
+	at site.ycsb.db.MongoDbClient.insert(MongoDbClient.java:270)
+	at site.ycsb.DBWrapper.insert(DBWrapper.java:221)
+	at site.ycsb.workloads.CoreWorkload.doInsert(CoreWorkload.java:601)
+	at site.ycsb.ClientThread.run(ClientThread.java:135)
+	at java.base/java.lang.Thread.run(Unknown Source)
+Exception while trying bulk insert with 0
+Exception while trying bulk insert with 0
+Exception while trying bulk insert with 0
+com.mongodb.MongoSocketReadException: Prematurely reached end of stream
+	at com.mongodb.internal.connection.SocketStream.read(SocketStream.java:92)
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveResponseBuffers(InternalStreamConnection.java:554)
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveMessage(InternalStreamConnection.java:425)
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveCommandMessageResponse(InternalStreamConnection.java:289)
+	at com.mongodb.internal.connection.InternalStreamConnection.sendAndReceive(InternalStreamConnection.java:255)
+	at com.mongodb.internal.connection.UsageTrackingInternalConnection.sendAndReceive(UsageTrackingInternalConnection.java:99)
+	at com.mongodb.internal.connection.DefaultConnectionPool$PooledConnection.sendAndReceive(DefaultConnectionPool.java:444)
+	at com.mongodb.internal.connection.CommandProtocolImpl.execute(CommandProtocolImpl.java:72)
+	at com.mongodb.internal.connection.DefaultServer$DefaultServerProtocolExecutor.execute(DefaultServer.java:200)
+	at com.mongodb.internal.connection.DefaultServerConnection.executeProtocol(DefaultServerConnection.java:269)
+	at com.mongodb.internal.connection.DefaultServerConnection.command(DefaultServerConnection.java:131)
+	at com.mongodb.operation.MixedBulkWriteOperation.executeCommand(MixedBulkWriteOperation.java:418)
+	at com.mongodb.operation.MixedBulkWriteOperation.executeBulkWriteBatch(MixedBulkWriteOperation.java:256)
+	at com.mongodb.operation.MixedBulkWriteOperation.access$700(MixedBulkWriteOperation.java:67)
+	at com.mongodb.operation.MixedBulkWriteOperation$1.call(MixedBulkWriteOperation.java:200)
+	at com.mongodb.operation.MixedBulkWriteOperation$1.call(MixedBulkWriteOperation.java:191)
+	at com.mongodb.operation.OperationHelper.withReleasableConnection(OperationHelper.java:419)
+	at com.mongodb.operation.MixedBulkWriteOperation.execute(MixedBulkWriteOperation.java:191)
+	at com.mongodb.operation.MixedBulkWriteOperation.execute(MixedBulkWriteOperation.java:67)
+	at com.mongodb.client.internal.MongoClientDelegate$DelegateOperationExecutor.execute(MongoClientDelegate.java:193)
+	at com.mongodb.client.internal.MongoCollectionImpl.executeSingleWriteRequest(MongoCollectionImpl.java:960)
+	at com.mongodb.client.internal.MongoCollectionImpl.executeInsertOne(MongoCollectionImpl.java:494)
+	at com.mongodb.client.internal.MongoCollectionImpl.insertOne(MongoCollectionImpl.java:478)
+	at com.mongodb.client.internal.MongoCollectionImpl.insertOne(MongoCollectionImpl.java:472)
+	at site.ycsb.db.MongoDbClient.insert(MongoDbClient.java:270)
+	at site.ycsb.DBWrapper.insert(DBWrapper.java:221)
+	at site.ycsb.workloads.CoreWorkload.doInsert(CoreWorkload.java:601)
+	at site.ycsb.ClientThread.run(ClientThread.java:135)
+	at java.base/java.lang.Thread.run(Unknown Source)
+Error inserting, not retrying any more. number of attempts: 1Insertion Retry Limit: 0
+com.mongodb.MongoSocketReadException: Prematurely reached end of stream
+	at com.mongodb.internal.connection.SocketStream.read(SocketStream.java:92)
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveResponseBuffers(InternalStreamConnection.java:554)
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveMessage(InternalStreamConnection.java:425)
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveCommandMessageResponse(InternalStreamConnection.java:289)
+	at com.mongodb.internal.connection.InternalStreamConnection.sendAndReceive(InternalStreamConnection.java:255)
+	at com.mongodb.internal.connection.UsageTrackingInternalConnection.sendAndReceive(UsageTrackingInternalConnection.java:99)
+	at com.mongodb.internal.connection.DefaultConnectionPool$PooledConnection.sendAndReceive(DefaultConnectionPool.java:444)
+	at com.mongodb.internal.connection.CommandProtocolImpl.execute(CommandProtocolImpl.java:72)
+	at com.mongodb.internal.connection.DefaultServer$DefaultServerProtocolExecutor.execute(DefaultServer.java:200)
+	at com.mongodb.internal.connection.DefaultServerConnection.executeProtocol(DefaultServerConnection.java:269)
+	at com.mongodb.internal.connection.DefaultServerConnection.command(DefaultServerConnection.java:131)
+	at com.mongodb.operation.MixedBulkWriteOperation.executeCommand(MixedBulkWriteOperation.java:418)
+	at com.mongodb.operation.MixedBulkWriteOperation.executeBulkWriteBatch(MixedBulkWriteOperation.java:256)
+	at com.mongodb.operation.MixedBulkWriteOperation.access$700(MixedBulkWriteOperation.java:67)
+	at com.mongodb.operation.MixedBulkWriteOperation$1.call(MixedBulkWriteOperation.java:200)
+	at com.mongodb.operation.MixedBulkWriteOperation$1.call(MixedBulkWriteOperation.java:191)
+	at com.mongodb.operation.OperationHelper.withReleasableConnection(OperationHelper.java:419)
+	at com.mongodb.operation.MixedBulkWriteOperation.execute(MixedBulkWriteOperation.java:191)
+	at com.mongodb.operation.MixedBulkWriteOperation.execute(MixedBulkWriteOperation.java:67)
+	at com.mongodb.client.internal.MongoClientDelegate$DelegateOperationExecutor.execute(MongoClientDelegate.java:193)
+	at com.mongodb.client.internal.MongoCollectionImpl.executeSingleWriteRequest(MongoCollectionImpl.java:960)
+	at com.mongodb.client.internal.MongoCollectionImpl.executeInsertOne(MongoCollectionImpl.java:494)
+	at com.mongodb.client.internal.MongoCollectionImpl.insertOne(MongoCollectionImpl.java:478)
+	at com.mongodb.client.internal.MongoCollectionImpl.insertOne(MongoCollectionImpl.java:472)
+	at site.ycsb.db.MongoDbClient.insert(MongoDbClient.java:270)
+	at site.ycsb.DBWrapper.insert(DBWrapper.java:221)
+	at site.ycsb.workloads.CoreWorkload.doInsert(CoreWorkload.java:601)
+	at site.ycsb.ClientThread.run(ClientThread.java:135)
+	at java.base/java.lang.Thread.run(Unknown Source)
+Error inserting, not retrying any more. number of attempts: 1Insertion Retry Limit: 0
+com.mongodb.MongoSocketReadException: Prematurely reached end of stream
+	at com.mongodb.internal.connection.SocketStream.read(SocketStream.java:92)
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveResponseBuffers(InternalStreamConnection.java:554)
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveMessage(InternalStreamConnection.java:425)
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveCommandMessageResponse(InternalStreamConnection.java:289)
+	at com.mongodb.internal.connection.InternalStreamConnection.sendAndReceive(InternalStreamConnection.java:255)
+	at com.mongodb.internal.connection.UsageTrackingInternalConnection.sendAndReceive(UsageTrackingInternalConnection.java:99)
+	at com.mongodb.internal.connection.DefaultConnectionPool$PooledConnection.sendAndReceive(DefaultConnectionPool.java:444)
+	at com.mongodb.internal.connection.CommandProtocolImpl.execute(CommandProtocolImpl.java:72)
+	at com.mongodb.internal.connection.DefaultServer$DefaultServerProtocolExecutor.execute(DefaultServer.java:200)
+	at com.mongodb.internal.connection.DefaultServerConnection.executeProtocol(DefaultServerConnection.java:269)
+	at com.mongodb.internal.connection.DefaultServerConnection.command(DefaultServerConnection.java:131)
+	at com.mongodb.operation.MixedBulkWriteOperation.executeCommand(MixedBulkWriteOperation.java:418)
+	at com.mongodb.operation.MixedBulkWriteOperation.executeBulkWriteBatch(MixedBulkWriteOperation.java:256)
+	at com.mongodb.operation.MixedBulkWriteOperation.access$700(MixedBulkWriteOperation.java:67)
+	at com.mongodb.operation.MixedBulkWriteOperation$1.call(MixedBulkWriteOperation.java:200)
+	at com.mongodb.operation.MixedBulkWriteOperation$1.call(MixedBulkWriteOperation.java:191)
+	at com.mongodb.operation.OperationHelper.withReleasableConnection(OperationHelper.java:419)
+	at com.mongodb.operation.MixedBulkWriteOperation.execute(MixedBulkWriteOperation.java:191)
+	at com.mongodb.operation.MixedBulkWriteOperation.execute(MixedBulkWriteOperation.java:67)
+	at com.mongodb.client.internal.MongoClientDelegate$DelegateOperationExecutor.execute(MongoClientDelegate.java:193)
+	at com.mongodb.client.internal.MongoCollectionImpl.executeSingleWriteRequest(MongoCollectionImpl.java:960)
+	at com.mongodb.client.internal.MongoCollectionImpl.executeInsertOne(MongoCollectionImpl.java:494)
+	at com.mongodb.client.internal.MongoCollectionImpl.insertOne(MongoCollectionImpl.java:478)
+	at com.mongodb.client.internal.MongoCollectionImpl.insertOne(MongoCollectionImpl.java:472)
+	at site.ycsb.db.MongoDbClient.insert(MongoDbClient.java:270)
+	at site.ycsb.DBWrapper.insert(DBWrapper.java:221)
+	at site.ycsb.workloads.CoreWorkload.doInsert(CoreWorkload.java:601)
+	at site.ycsb.ClientThread.run(ClientThread.java:135)
+	at java.base/java.lang.Thread.run(Unknown Source)
+Error inserting, not retrying any more. number of attempts: 1Insertion Retry Limit: 0
+Error inserting, not retrying any more. number of attempts: 1Insertion Retry Limit: 0
+com.mongodb.MongoSocketReadException: Prematurely reached end of stream
+	at com.mongodb.internal.connection.SocketStream.read(SocketStream.java:92)
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveResponseBuffers(InternalStreamConnection.java:554)
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveMessage(InternalStreamConnection.java:425)
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveCommandMessageResponse(InternalStreamConnection.java:289)
+	at com.mongodb.internal.connection.InternalStreamConnection.sendAndReceive(InternalStreamConnection.java:255)
+	at com.mongodb.internal.connection.UsageTrackingInternalConnection.sendAndReceive(UsageTrackingInternalConnection.java:99)
+	at com.mongodb.internal.connection.DefaultConnectionPool$PooledConnection.sendAndReceive(DefaultConnectionPool.java:444)
+	at com.mongodb.internal.connection.CommandProtocolImpl.execute(CommandProtocolImpl.java:72)
+	at com.mongodb.internal.connection.DefaultServer$DefaultServerProtocolExecutor.execute(DefaultServer.java:200)
+	at com.mongodb.internal.connection.DefaultServerConnection.executeProtocol(DefaultServerConnection.java:269)
+	at com.mongodb.internal.connection.DefaultServerConnection.command(DefaultServerConnection.java:131)
+	at com.mongodb.operation.MixedBulkWriteOperation.executeCommand(MixedBulkWriteOperation.java:418)
+	at com.mongodb.operation.MixedBulkWriteOperation.executeBulkWriteBatch(MixedBulkWriteOperation.java:256)
+	at com.mongodb.operation.MixedBulkWriteOperation.access$700(MixedBulkWriteOperation.java:67)
+	at com.mongodb.operation.MixedBulkWriteOperation$1.call(MixedBulkWriteOperation.java:200)
+	at com.mongodb.operation.MixedBulkWriteOperation$1.call(MixedBulkWriteOperation.java:191)
+	at com.mongodb.operation.OperationHelper.withReleasableConnection(OperationHelper.java:419)
+	at com.mongodb.operation.MixedBulkWriteOperation.execute(MixedBulkWriteOperation.java:191)
+	at com.mongodb.operation.MixedBulkWriteOperation.execute(MixedBulkWriteOperation.java:67)
+	at com.mongodb.client.internal.MongoClientDelegate$DelegateOperationExecutor.execute(MongoClientDelegate.java:193)
+	at com.mongodb.client.internal.MongoCollectionImpl.executeSingleWriteRequest(MongoCollectionImpl.java:960)
+	at com.mongodb.client.internal.MongoCollectionImpl.executeInsertOne(MongoCollectionImpl.java:494)
+	at com.mongodb.client.internal.MongoCollectionImpl.insertOne(MongoCollectionImpl.java:478)
+	at com.mongodb.client.internal.MongoCollectionImpl.insertOne(MongoCollectionImpl.java:472)
+	at site.ycsb.db.MongoDbClient.insert(MongoDbClient.java:270)
+	at site.ycsb.DBWrapper.insert(DBWrapper.java:221)
+	at site.ycsb.workloads.CoreWorkload.doInsert(CoreWorkload.java:601)
+	at site.ycsb.ClientThread.run(ClientThread.java:135)
+	at java.base/java.lang.Thread.run(Unknown Source)
+Error inserting, not retrying any more. number of attempts: 1Insertion Retry Limit: 0
+Error inserting, not retrying any more. number of attempts: 1Insertion Retry Limit: 0
+com.mongodb.MongoSocketReadException: Prematurely reached end of stream
+	at com.mongodb.internal.connection.SocketStream.read(SocketStream.java:92)
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveResponseBuffers(InternalStreamConnection.java:554)
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveMessage(InternalStreamConnection.java:425)
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveCommandMessageResponse(InternalStreamConnection.java:289)
+	at com.mongodb.internal.connection.InternalStreamConnection.sendAndReceive(InternalStreamConnection.java:255)
+	at com.mongodb.internal.connection.UsageTrackingInternalConnection.sendAndReceive(UsageTrackingInternalConnection.java:99)
+	at com.mongodb.internal.connection.DefaultConnectionPool$PooledConnection.sendAndReceive(DefaultConnectionPool.java:444)
+	at com.mongodb.internal.connection.CommandProtocolImpl.execute(CommandProtocolImpl.java:72)
+	at com.mongodb.internal.connection.DefaultServer$DefaultServerProtocolExecutor.execute(DefaultServer.java:200)
+	at com.mongodb.internal.connection.DefaultServerConnection.executeProtocol(DefaultServerConnection.java:269)
+	at com.mongodb.internal.connection.DefaultServerConnection.command(DefaultServerConnection.java:131)
+	at com.mongodb.operation.MixedBulkWriteOperation.executeCommand(MixedBulkWriteOperation.java:418)
+	at com.mongodb.operation.MixedBulkWriteOperation.executeBulkWriteBatch(MixedBulkWriteOperation.java:256)
+	at com.mongodb.operation.MixedBulkWriteOperation.access$700(MixedBulkWriteOperation.java:67)
+	at com.mongodb.operation.MixedBulkWriteOperation$1.call(MixedBulkWriteOperation.java:200)
+	at com.mongodb.operation.MixedBulkWriteOperation$1.call(MixedBulkWriteOperation.java:191)
+	at com.mongodb.operation.OperationHelper.withReleasableConnection(OperationHelper.java:419)
+	at com.mongodb.operation.MixedBulkWriteOperation.execute(MixedBulkWriteOperation.java:191)
+	at com.mongodb.operation.MixedBulkWriteOperation.execute(MixedBulkWriteOperation.java:67)
+	at com.mongodb.client.internal.MongoClientDelegate$DelegateOperationExecutor.execute(MongoClientDelegate.java:193)
+	at com.mongodb.client.internal.MongoCollectionImpl.executeSingleWriteRequest(MongoCollectionImpl.java:960)
+	at com.mongodb.client.internal.MongoCollectionImpl.executeInsertOne(MongoCollectionImpl.java:494)
+	at com.mongodb.client.internal.MongoCollectionImpl.insertOne(MongoCollectionImpl.java:478)
+	at com.mongodb.client.internal.MongoCollectionImpl.insertOne(MongoCollectionImpl.java:472)
+	at site.ycsb.db.MongoDbClient.insert(MongoDbClient.java:270)
+	at site.ycsb.DBWrapper.insert(DBWrapper.java:221)
+	at site.ycsb.workloads.CoreWorkload.doInsert(CoreWorkload.java:601)
+	at site.ycsb.ClientThread.run(ClientThread.java:135)
+	at java.base/java.lang.Thread.run(Unknown Source)
+Error inserting, not retrying any more. number of attempts: 1Insertion Retry Limit: 0
+Error inserting, not retrying any more. number of attempts: 1Insertion Retry Limit: 0
+Error inserting, not retrying any more. number of attempts: 1Insertion Retry Limit: 0
+com.mongodb.MongoSocketReadException: Prematurely reached end of stream
+	at com.mongodb.internal.connection.SocketStream.read(SocketStream.java:92)
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveResponseBuffers(InternalStreamConnection.java:554)
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveMessage(InternalStreamConnection.java:425)
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveCommandMessageResponse(InternalStreamConnection.java:289)
+	at com.mongodb.internal.connection.InternalStreamConnection.sendAndReceive(InternalStreamConnection.java:255)
+	at com.mongodb.internal.connection.UsageTrackingInternalConnection.sendAndReceive(UsageTrackingInternalConnection.java:99)
+	at com.mongodb.internal.connection.DefaultConnectionPool$PooledConnection.sendAndReceive(DefaultConnectionPool.java:444)
+	at com.mongodb.internal.connection.CommandProtocolImpl.execute(CommandProtocolImpl.java:72)
+	at com.mongodb.internal.connection.DefaultServer$DefaultServerProtocolExecutor.execute(DefaultServer.java:200)
+	at com.mongodb.internal.connection.DefaultServerConnection.executeProtocol(DefaultServerConnection.java:269)
+	at com.mongodb.internal.connection.DefaultServerConnection.command(DefaultServerConnection.java:131)
+	at com.mongodb.operation.MixedBulkWriteOperation.executeCommand(MixedBulkWriteOperation.java:418)
+	at com.mongodb.operation.MixedBulkWriteOperation.executeBulkWriteBatch(MixedBulkWriteOperation.java:256)
+	at com.mongodb.operation.MixedBulkWriteOperation.access$700(MixedBulkWriteOperation.java:67)
+	at com.mongodb.operation.MixedBulkWriteOperation$1.call(MixedBulkWriteOperation.java:200)
+	at com.mongodb.operation.MixedBulkWriteOperation$1.call(MixedBulkWriteOperation.java:191)
+	at com.mongodb.operation.OperationHelper.withReleasableConnection(OperationHelper.java:419)
+	at com.mongodb.operation.MixedBulkWriteOperation.execute(MixedBulkWriteOperation.java:191)
+	at com.mongodb.operation.MixedBulkWriteOperation.execute(MixedBulkWriteOperation.java:67)
+	at com.mongodb.client.internal.MongoClientDelegate$DelegateOperationExecutor.execute(MongoClientDelegate.java:193)
+	at com.mongodb.client.internal.MongoCollectionImpl.executeSingleWriteRequest(MongoCollectionImpl.java:960)
+	at com.mongodb.client.internal.MongoCollectionImpl.executeInsertOne(MongoCollectionImpl.java:494)
+	at com.mongodb.client.internal.MongoCollectionImpl.insertOne(MongoCollectionImpl.java:478)
+	at com.mongodb.client.internal.MongoCollectionImpl.insertOne(MongoCollectionImpl.java:472)
+	at site.ycsb.db.MongoDbClient.insert(MongoDbClient.java:270)
+	at site.ycsb.DBWrapper.insert(DBWrapper.java:221)
+	at site.ycsb.workloads.CoreWorkload.doInsert(CoreWorkload.java:601)
+	at site.ycsb.ClientThread.run(ClientThread.java:135)
+	at java.base/java.lang.Thread.run(Unknown Source)
+Error inserting, not retrying any more. number of attempts: 1Insertion Retry Limit: 0
+Error inserting, not retrying any more. number of attempts: 1Insertion Retry Limit: 0
+Error inserting, not retrying any more. number of attempts: 1Insertion Retry Limit: 0
+com.mongodb.MongoSocketReadException: Prematurely reached end of stream
+	at com.mongodb.internal.connection.SocketStream.read(SocketStream.java:92)
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveResponseBuffers(InternalStreamConnection.java:554)
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveMessage(InternalStreamConnection.java:425)
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveCommandMessageResponse(InternalStreamConnection.java:289)
+	at com.mongodb.internal.connection.InternalStreamConnection.sendAndReceive(InternalStreamConnection.java:255)
+	at com.mongodb.internal.connection.UsageTrackingInternalConnection.sendAndReceive(UsageTrackingInternalConnection.java:99)
+	at com.mongodb.internal.connection.DefaultConnectionPool$PooledConnection.sendAndReceive(DefaultConnectionPool.java:444)
+	at com.mongodb.internal.connection.CommandProtocolImpl.execute(CommandProtocolImpl.java:72)
+	at com.mongodb.internal.connection.DefaultServer$DefaultServerProtocolExecutor.execute(DefaultServer.java:200)
+	at com.mongodb.internal.connection.DefaultServerConnection.executeProtocol(DefaultServerConnection.java:269)
+	at com.mongodb.internal.connection.DefaultServerConnection.command(DefaultServerConnection.java:131)
+	at com.mongodb.operation.MixedBulkWriteOperation.executeCommand(MixedBulkWriteOperation.java:418)
+	at com.mongodb.operation.MixedBulkWriteOperation.executeBulkWriteBatch(MixedBulkWriteOperation.java:256)
+	at com.mongodb.operation.MixedBulkWriteOperation.access$700(MixedBulkWriteOperation.java:67)
+	at com.mongodb.operation.MixedBulkWriteOperation$1.call(MixedBulkWriteOperation.java:200)
+	at com.mongodb.operation.MixedBulkWriteOperation$1.call(MixedBulkWriteOperation.java:191)
+	at com.mongodb.operation.OperationHelper.withReleasableConnection(OperationHelper.java:419)
+	at com.mongodb.operation.MixedBulkWriteOperation.execute(MixedBulkWriteOperation.java:191)
+	at com.mongodb.operation.MixedBulkWriteOperation.execute(MixedBulkWriteOperation.java:67)
+	at com.mongodb.client.internal.MongoClientDelegate$DelegateOperationExecutor.execute(MongoClientDelegate.java:193)
+	at com.mongodb.client.internal.MongoCollectionImpl.executeSingleWriteRequest(MongoCollectionImpl.java:960)
+	at com.mongodb.client.internal.MongoCollectionImpl.executeInsertOne(MongoCollectionImpl.java:494)
+	at com.mongodb.client.internal.MongoCollectionImpl.insertOne(MongoCollectionImpl.java:478)
+	at com.mongodb.client.internal.MongoCollectionImpl.insertOne(MongoCollectionImpl.java:472)
+	at site.ycsb.db.MongoDbClient.insert(MongoDbClient.java:270)
+	at site.ycsb.DBWrapper.insert(DBWrapper.java:221)
+	at site.ycsb.workloads.CoreWorkload.doInsert(CoreWorkload.java:601)
+	at site.ycsb.ClientThread.run(ClientThread.java:135)
+	at java.base/java.lang.Thread.run(Unknown Source)
+Error inserting, not retrying any more. number of attempts: 1Insertion Retry Limit: 0
+Error inserting, not retrying any more. number of attempts: 1Insertion Retry Limit: 0
+Could not close MongoDB connection pool: com.mongodb.MongoSocketOpenException: Exception opening socket
+com.mongodb.MongoSocketOpenException: Exception opening socket
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:67)
+	at com.mongodb.internal.connection.InternalStreamConnection.open(InternalStreamConnection.java:126)
+	at com.mongodb.internal.connection.UsageTrackingInternalConnection.open(UsageTrackingInternalConnection.java:50)
+	at com.mongodb.internal.connection.DefaultConnectionPool$PooledConnection.open(DefaultConnectionPool.java:390)
+	at com.mongodb.internal.connection.DefaultConnectionPool.get(DefaultConnectionPool.java:106)
+	at com.mongodb.internal.connection.DefaultConnectionPool.get(DefaultConnectionPool.java:92)
+	at com.mongodb.internal.connection.DefaultServer.getConnection(DefaultServer.java:85)
+	at com.mongodb.internal.session.ServerSessionPool.endClosedSessions(ServerSessionPool.java:141)
+	at com.mongodb.internal.session.ServerSessionPool.close(ServerSessionPool.java:97)
+	at com.mongodb.client.internal.MongoClientDelegate.close(MongoClientDelegate.java:123)
+	at com.mongodb.Mongo.close(Mongo.java:529)
+	at site.ycsb.db.MongoDbClient.cleanup(MongoDbClient.java:122)
+	at site.ycsb.DBWrapper.cleanup(DBWrapper.java:114)
+	at site.ycsb.ClientThread.run(ClientThread.java:152)
+	at java.base/java.lang.Thread.run(Unknown Source)
+Caused by: java.net.SocketTimeoutException: connect timed out
+	at java.base/java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.base/java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
+	at java.base/java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
+	at java.base/java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+	at java.base/java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.base/java.net.Socket.connect(Unknown Source)
+	at com.mongodb.internal.connection.SocketStreamHelper.initialize(SocketStreamHelper.java:64)
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:62)
+	... 14 more
+[OVERALL], RunTime(ms), 12534
+[OVERALL], Throughput(ops/sec), 157.8905377373544
+[TOTAL_GCS_G1_Young_Generation], Count, 2
+[TOTAL_GC_TIME_G1_Young_Generation], Time(ms), 22
+[TOTAL_GC_TIME_%_G1_Young_Generation], Time(%), 0.17552257858624543
+[TOTAL_GCS_G1_Old_Generation], Count, 0
+[TOTAL_GC_TIME_G1_Old_Generation], Time(ms), 0
+[TOTAL_GC_TIME_%_G1_Old_Generation], Time(%), 0.0
+[TOTAL_GCs], Count, 2
+[TOTAL_GC_TIME], Time(ms), 22
+[TOTAL_GC_TIME_%], Time(%), 0.17552257858624543
+[CLEANUP], Operations, 16
+[CLEANUP], AverageLatency(us), 626432.25
+[CLEANUP], MinLatency(us), 0
+[CLEANUP], MaxLatency(us), 10027007
+[CLEANUP], 95thPercentileLatency(us), 4
+[CLEANUP], 99thPercentileLatency(us), 10027007
+[INSERT], Operations, 1979
+[INSERT], AverageLatency(us), 14386.991409802931
+[INSERT], MinLatency(us), 4892
+[INSERT], MaxLatency(us), 123007
+[INSERT], 95thPercentileLatency(us), 24175
+[INSERT], 99thPercentileLatency(us), 96767
+[INSERT], Return=OK, 1979
+[INSERT], Return=ERROR, 16
+[INSERT-FAILED], Operations, 16
+[INSERT-FAILED], AverageLatency(us), 402928.0
+[INSERT-FAILED], MinLatency(us), 391424
+[INSERT-FAILED], MaxLatency(us), 409855
+[INSERT-FAILED], 95thPercentileLatency(us), 409087
+[INSERT-FAILED], 99thPercentileLatency(us), 409855

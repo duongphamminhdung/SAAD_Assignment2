@@ -1,10 +1,15 @@
-# MongoDB — replica set (DONE for workloads A–E)
+# MongoDB — replica set (A–E)
 
-Status: experiments complete (3-node and 5-node, workloads A–E, 10 reps each) on the shared test
-machine. Custom-workload pass still pending (run it once the team defines the scenario).
+Status: 3-node complete (A–E × 10 reps). 5-node at 38/50 — workloadd 8/10, workloade 0/10 —
+interrupted when the test Mac ran out of disk (host-level, not a DB failure; all recorded reps
+passed the failed-operation check). To resume on any machine: re-run `./run_mongo.sh` with
+`NODE_CONFIGS=5` — completed reps are skipped automatically via their run logs in
+`../results/raw/`. Custom-workload pass still pending (run it once the team defines the scenario).
 
-Files (to be pushed here from the experiment machine): `run_mongo.sh`,
-`docker-compose-mongo-3.yml`, `docker-compose-mongo-5.yml`.
+Files: `run_mongo.sh`, `docker-compose-mongo-3.yml`, `docker-compose-mongo-5.yml` — written to
+match the documented protocol above (same loop structure as `redis/run_redis.sh`, same CSV schema)
+plus the 2 CPU / 2 GB container limits. Teammate: verify against your originals (or replace them
+here) so the repo holds the exact files used for the recorded runs.
 
 ## Setup
 

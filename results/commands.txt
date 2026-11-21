@@ -1,0 +1,564 @@
+# redis 3 nodes workloada rep1
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh load redis -P workloads/workloada -p "redis.host=redis1" -p "redis.port=6379" -p recordcount=100000 -p operationcount=100000 -threads 16
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh run redis -P workloads/workloada -p "redis.host=redis1" -p "redis.port=6379" -p recordcount=100000 -p operationcount=100000 -threads 16
+# redis 3 nodes workloada rep2
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh load redis -P workloads/workloada -p "redis.host=redis1" -p "redis.port=6379" -p recordcount=100000 -p operationcount=100000 -threads 16
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh run redis -P workloads/workloada -p "redis.host=redis1" -p "redis.port=6379" -p recordcount=100000 -p operationcount=100000 -threads 16
+# redis 3 nodes workloada rep3
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh load redis -P workloads/workloada -p "redis.host=redis1" -p "redis.port=6379" -p recordcount=100000 -p operationcount=100000 -threads 16
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh run redis -P workloads/workloada -p "redis.host=redis1" -p "redis.port=6379" -p recordcount=100000 -p operationcount=100000 -threads 16
+# redis 3 nodes workloada rep4
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh load redis -P workloads/workloada -p "redis.host=redis1" -p "redis.port=6379" -p recordcount=100000 -p operationcount=100000 -threads 16
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh run redis -P workloads/workloada -p "redis.host=redis1" -p "redis.port=6379" -p recordcount=100000 -p operationcount=100000 -threads 16
+# redis 3 nodes workloada rep5
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh load redis -P workloads/workloada -p "redis.host=redis1" -p "redis.port=6379" -p recordcount=100000 -p operationcount=100000 -threads 16
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh run redis -P workloads/workloada -p "redis.host=redis1" -p "redis.port=6379" -p recordcount=100000 -p operationcount=100000 -threads 16
+# redis 3 nodes workloada rep6
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh load redis -P workloads/workloada -p "redis.host=redis1" -p "redis.port=6379" -p recordcount=100000 -p operationcount=100000 -threads 16
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh run redis -P workloads/workloada -p "redis.host=redis1" -p "redis.port=6379" -p recordcount=100000 -p operationcount=100000 -threads 16
+# redis 3 nodes workloada rep7
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh load redis -P workloads/workloada -p "redis.host=redis1" -p "redis.port=6379" -p recordcount=100000 -p operationcount=100000 -threads 16
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh run redis -P workloads/workloada -p "redis.host=redis1" -p "redis.port=6379" -p recordcount=100000 -p operationcount=100000 -threads 16
+# redis 3 nodes workloada rep8
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh load redis -P workloads/workloada -p "redis.host=redis1" -p "redis.port=6379" -p recordcount=100000 -p operationcount=100000 -threads 16
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh run redis -P workloads/workloada -p "redis.host=redis1" -p "redis.port=6379" -p recordcount=100000 -p operationcount=100000 -threads 16
+# redis 3 nodes workloada rep9
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh load redis -P workloads/workloada -p "redis.host=redis1" -p "redis.port=6379" -p recordcount=100000 -p operationcount=100000 -threads 16
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh run redis -P workloads/workloada -p "redis.host=redis1" -p "redis.port=6379" -p recordcount=100000 -p operationcount=100000 -threads 16
+# redis 3 nodes workloada rep10
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh load redis -P workloads/workloada -p "redis.host=redis1" -p "redis.port=6379" -p recordcount=100000 -p operationcount=100000 -threads 16
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh run redis -P workloads/workloada -p "redis.host=redis1" -p "redis.port=6379" -p recordcount=100000 -p operationcount=100000 -threads 16
+# redis 3 nodes workloadb rep1
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh load redis -P workloads/workloadb -p "redis.host=redis1" -p "redis.port=6379" -p recordcount=100000 -p operationcount=100000 -threads 16
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh run redis -P workloads/workloadb -p "redis.host=redis1" -p "redis.port=6379" -p recordcount=100000 -p operationcount=100000 -threads 16
+# redis 3 nodes workloadb rep2
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh load redis -P workloads/workloadb -p "redis.host=redis1" -p "redis.port=6379" -p recordcount=100000 -p operationcount=100000 -threads 16
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh run redis -P workloads/workloadb -p "redis.host=redis1" -p "redis.port=6379" -p recordcount=100000 -p operationcount=100000 -threads 16
+# redis 3 nodes workloadb rep3
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh load redis -P workloads/workloadb -p "redis.host=redis1" -p "redis.port=6379" -p recordcount=100000 -p operationcount=100000 -threads 16
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh run redis -P workloads/workloadb -p "redis.host=redis1" -p "redis.port=6379" -p recordcount=100000 -p operationcount=100000 -threads 16
+# redis 3 nodes workloadb rep4
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh load redis -P workloads/workloadb -p "redis.host=redis1" -p "redis.port=6379" -p recordcount=100000 -p operationcount=100000 -threads 16
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh run redis -P workloads/workloadb -p "redis.host=redis1" -p "redis.port=6379" -p recordcount=100000 -p operationcount=100000 -threads 16
+# redis 3 nodes workloadb rep5
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh load redis -P workloads/workloadb -p "redis.host=redis1" -p "redis.port=6379" -p recordcount=100000 -p operationcount=100000 -threads 16
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh run redis -P workloads/workloadb -p "redis.host=redis1" -p "redis.port=6379" -p recordcount=100000 -p operationcount=100000 -threads 16
+# redis 3 nodes workloadb rep6
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh load redis -P workloads/workloadb -p "redis.host=redis1" -p "redis.port=6379" -p recordcount=100000 -p operationcount=100000 -threads 16
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh run redis -P workloads/workloadb -p "redis.host=redis1" -p "redis.port=6379" -p recordcount=100000 -p operationcount=100000 -threads 16
+# redis 3 nodes workloadb rep7
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh load redis -P workloads/workloadb -p "redis.host=redis1" -p "redis.port=6379" -p recordcount=100000 -p operationcount=100000 -threads 16
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh run redis -P workloads/workloadb -p "redis.host=redis1" -p "redis.port=6379" -p recordcount=100000 -p operationcount=100000 -threads 16
+# redis 3 nodes workloadb rep8
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh load redis -P workloads/workloadb -p "redis.host=redis1" -p "redis.port=6379" -p recordcount=100000 -p operationcount=100000 -threads 16
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh run redis -P workloads/workloadb -p "redis.host=redis1" -p "redis.port=6379" -p recordcount=100000 -p operationcount=100000 -threads 16
+# redis 3 nodes workloadb rep9
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh load redis -P workloads/workloadb -p "redis.host=redis1" -p "redis.port=6379" -p recordcount=100000 -p operationcount=100000 -threads 16
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh run redis -P workloads/workloadb -p "redis.host=redis1" -p "redis.port=6379" -p recordcount=100000 -p operationcount=100000 -threads 16
+# redis 3 nodes workloadb rep10
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh load redis -P workloads/workloadb -p "redis.host=redis1" -p "redis.port=6379" -p recordcount=100000 -p operationcount=100000 -threads 16
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh run redis -P workloads/workloadb -p "redis.host=redis1" -p "redis.port=6379" -p recordcount=100000 -p operationcount=100000 -threads 16
+# redis 3 nodes workloadc rep1
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh load redis -P workloads/workloadc -p "redis.host=redis1" -p "redis.port=6379" -p recordcount=100000 -p operationcount=100000 -threads 16
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh run redis -P workloads/workloadc -p "redis.host=redis1" -p "redis.port=6379" -p recordcount=100000 -p operationcount=100000 -threads 16
+# redis 3 nodes workloadc rep2
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh load redis -P workloads/workloadc -p "redis.host=redis1" -p "redis.port=6379" -p recordcount=100000 -p operationcount=100000 -threads 16
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh run redis -P workloads/workloadc -p "redis.host=redis1" -p "redis.port=6379" -p recordcount=100000 -p operationcount=100000 -threads 16
+# redis 3 nodes workloadc rep3
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh load redis -P workloads/workloadc -p "redis.host=redis1" -p "redis.port=6379" -p recordcount=100000 -p operationcount=100000 -threads 16
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh run redis -P workloads/workloadc -p "redis.host=redis1" -p "redis.port=6379" -p recordcount=100000 -p operationcount=100000 -threads 16
+# redis 3 nodes workloadc rep4
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh load redis -P workloads/workloadc -p "redis.host=redis1" -p "redis.port=6379" -p recordcount=100000 -p operationcount=100000 -threads 16
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh run redis -P workloads/workloadc -p "redis.host=redis1" -p "redis.port=6379" -p recordcount=100000 -p operationcount=100000 -threads 16
+# redis 3 nodes workloadc rep5
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh load redis -P workloads/workloadc -p "redis.host=redis1" -p "redis.port=6379" -p recordcount=100000 -p operationcount=100000 -threads 16
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh run redis -P workloads/workloadc -p "redis.host=redis1" -p "redis.port=6379" -p recordcount=100000 -p operationcount=100000 -threads 16
+# redis 3 nodes workloadc rep6
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh load redis -P workloads/workloadc -p "redis.host=redis1" -p "redis.port=6379" -p recordcount=100000 -p operationcount=100000 -threads 16
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh run redis -P workloads/workloadc -p "redis.host=redis1" -p "redis.port=6379" -p recordcount=100000 -p operationcount=100000 -threads 16
+# redis 3 nodes workloadc rep7
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh load redis -P workloads/workloadc -p "redis.host=redis1" -p "redis.port=6379" -p recordcount=100000 -p operationcount=100000 -threads 16
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh run redis -P workloads/workloadc -p "redis.host=redis1" -p "redis.port=6379" -p recordcount=100000 -p operationcount=100000 -threads 16
+# redis 3 nodes workloadc rep8
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh load redis -P workloads/workloadc -p "redis.host=redis1" -p "redis.port=6379" -p recordcount=100000 -p operationcount=100000 -threads 16
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh run redis -P workloads/workloadc -p "redis.host=redis1" -p "redis.port=6379" -p recordcount=100000 -p operationcount=100000 -threads 16
+# redis 3 nodes workloadc rep9
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh load redis -P workloads/workloadc -p "redis.host=redis1" -p "redis.port=6379" -p recordcount=100000 -p operationcount=100000 -threads 16
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh run redis -P workloads/workloadc -p "redis.host=redis1" -p "redis.port=6379" -p recordcount=100000 -p operationcount=100000 -threads 16
+# redis 3 nodes workloadc rep10
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh load redis -P workloads/workloadc -p "redis.host=redis1" -p "redis.port=6379" -p recordcount=100000 -p operationcount=100000 -threads 16
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh run redis -P workloads/workloadc -p "redis.host=redis1" -p "redis.port=6379" -p recordcount=100000 -p operationcount=100000 -threads 16
+# redis 3 nodes workloadd rep1
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh load redis -P workloads/workloadd -p "redis.host=redis1" -p "redis.port=6379" -p recordcount=100000 -p operationcount=100000 -threads 16
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh run redis -P workloads/workloadd -p "redis.host=redis1" -p "redis.port=6379" -p recordcount=100000 -p operationcount=100000 -threads 16
+# redis 3 nodes workloadd rep2
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh load redis -P workloads/workloadd -p "redis.host=redis1" -p "redis.port=6379" -p recordcount=100000 -p operationcount=100000 -threads 16
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh run redis -P workloads/workloadd -p "redis.host=redis1" -p "redis.port=6379" -p recordcount=100000 -p operationcount=100000 -threads 16
+# redis 3 nodes workloadd rep3
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh load redis -P workloads/workloadd -p "redis.host=redis1" -p "redis.port=6379" -p recordcount=100000 -p operationcount=100000 -threads 16
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh run redis -P workloads/workloadd -p "redis.host=redis1" -p "redis.port=6379" -p recordcount=100000 -p operationcount=100000 -threads 16
+# redis 3 nodes workloadd rep4
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh load redis -P workloads/workloadd -p "redis.host=redis1" -p "redis.port=6379" -p recordcount=100000 -p operationcount=100000 -threads 16
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh run redis -P workloads/workloadd -p "redis.host=redis1" -p "redis.port=6379" -p recordcount=100000 -p operationcount=100000 -threads 16
+# redis 3 nodes workloadd rep5
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh load redis -P workloads/workloadd -p "redis.host=redis1" -p "redis.port=6379" -p recordcount=100000 -p operationcount=100000 -threads 16
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh run redis -P workloads/workloadd -p "redis.host=redis1" -p "redis.port=6379" -p recordcount=100000 -p operationcount=100000 -threads 16
+# redis 3 nodes workloadd rep6
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh load redis -P workloads/workloadd -p "redis.host=redis1" -p "redis.port=6379" -p recordcount=100000 -p operationcount=100000 -threads 16
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh run redis -P workloads/workloadd -p "redis.host=redis1" -p "redis.port=6379" -p recordcount=100000 -p operationcount=100000 -threads 16
+# redis 3 nodes workloadd rep7
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh load redis -P workloads/workloadd -p "redis.host=redis1" -p "redis.port=6379" -p recordcount=100000 -p operationcount=100000 -threads 16
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh run redis -P workloads/workloadd -p "redis.host=redis1" -p "redis.port=6379" -p recordcount=100000 -p operationcount=100000 -threads 16
+# redis 3 nodes workloadd rep8
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh load redis -P workloads/workloadd -p "redis.host=redis1" -p "redis.port=6379" -p recordcount=100000 -p operationcount=100000 -threads 16
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh run redis -P workloads/workloadd -p "redis.host=redis1" -p "redis.port=6379" -p recordcount=100000 -p operationcount=100000 -threads 16
+# redis 3 nodes workloadd rep9
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh load redis -P workloads/workloadd -p "redis.host=redis1" -p "redis.port=6379" -p recordcount=100000 -p operationcount=100000 -threads 16
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh run redis -P workloads/workloadd -p "redis.host=redis1" -p "redis.port=6379" -p recordcount=100000 -p operationcount=100000 -threads 16
+# redis 3 nodes workloadd rep10
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh load redis -P workloads/workloadd -p "redis.host=redis1" -p "redis.port=6379" -p recordcount=100000 -p operationcount=100000 -threads 16
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh run redis -P workloads/workloadd -p "redis.host=redis1" -p "redis.port=6379" -p recordcount=100000 -p operationcount=100000 -threads 16
+# redis 3 nodes workloade rep1
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh load redis -P workloads/workloade -p "redis.host=redis1" -p "redis.port=6379" -p recordcount=100000 -p operationcount=100000 -threads 16
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh run redis -P workloads/workloade -p "redis.host=redis1" -p "redis.port=6379" -p recordcount=100000 -p operationcount=100000 -threads 16
+# redis 3 nodes workloade rep2
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh load redis -P workloads/workloade -p "redis.host=redis1" -p "redis.port=6379" -p recordcount=100000 -p operationcount=100000 -threads 16
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh run redis -P workloads/workloade -p "redis.host=redis1" -p "redis.port=6379" -p recordcount=100000 -p operationcount=100000 -threads 16
+# redis 3 nodes workloade rep3
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh load redis -P workloads/workloade -p "redis.host=redis1" -p "redis.port=6379" -p recordcount=100000 -p operationcount=100000 -threads 16
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh run redis -P workloads/workloade -p "redis.host=redis1" -p "redis.port=6379" -p recordcount=100000 -p operationcount=100000 -threads 16
+# redis 3 nodes workloade rep4
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh load redis -P workloads/workloade -p "redis.host=redis1" -p "redis.port=6379" -p recordcount=100000 -p operationcount=100000 -threads 16
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh run redis -P workloads/workloade -p "redis.host=redis1" -p "redis.port=6379" -p recordcount=100000 -p operationcount=100000 -threads 16
+# redis 3 nodes workloade rep5
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh load redis -P workloads/workloade -p "redis.host=redis1" -p "redis.port=6379" -p recordcount=100000 -p operationcount=100000 -threads 16
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh run redis -P workloads/workloade -p "redis.host=redis1" -p "redis.port=6379" -p recordcount=100000 -p operationcount=100000 -threads 16
+# redis 3 nodes workloade rep6
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh load redis -P workloads/workloade -p "redis.host=redis1" -p "redis.port=6379" -p recordcount=100000 -p operationcount=100000 -threads 16
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh run redis -P workloads/workloade -p "redis.host=redis1" -p "redis.port=6379" -p recordcount=100000 -p operationcount=100000 -threads 16
+# redis 3 nodes workloade rep7
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh load redis -P workloads/workloade -p "redis.host=redis1" -p "redis.port=6379" -p recordcount=100000 -p operationcount=100000 -threads 16
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh run redis -P workloads/workloade -p "redis.host=redis1" -p "redis.port=6379" -p recordcount=100000 -p operationcount=100000 -threads 16
+# redis 3 nodes workloade rep8
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh load redis -P workloads/workloade -p "redis.host=redis1" -p "redis.port=6379" -p recordcount=100000 -p operationcount=100000 -threads 16
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh run redis -P workloads/workloade -p "redis.host=redis1" -p "redis.port=6379" -p recordcount=100000 -p operationcount=100000 -threads 16
+# redis 3 nodes workloade rep9
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh load redis -P workloads/workloade -p "redis.host=redis1" -p "redis.port=6379" -p recordcount=100000 -p operationcount=100000 -threads 16
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh run redis -P workloads/workloade -p "redis.host=redis1" -p "redis.port=6379" -p recordcount=100000 -p operationcount=100000 -threads 16
+# redis 3 nodes workloade rep10
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh load redis -P workloads/workloade -p "redis.host=redis1" -p "redis.port=6379" -p recordcount=100000 -p operationcount=100000 -threads 16
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh run redis -P workloads/workloade -p "redis.host=redis1" -p "redis.port=6379" -p recordcount=100000 -p operationcount=100000 -threads 16
+# redis 5 nodes workloada rep1
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh load redis -P workloads/workloada -p "redis.host=redis1" -p "redis.port=6379" -p recordcount=100000 -p operationcount=100000 -threads 16
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh run redis -P workloads/workloada -p "redis.host=redis1" -p "redis.port=6379" -p recordcount=100000 -p operationcount=100000 -threads 16
+# redis 5 nodes workloada rep2
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh load redis -P workloads/workloada -p "redis.host=redis1" -p "redis.port=6379" -p recordcount=100000 -p operationcount=100000 -threads 16
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh run redis -P workloads/workloada -p "redis.host=redis1" -p "redis.port=6379" -p recordcount=100000 -p operationcount=100000 -threads 16
+# redis 5 nodes workloada rep3
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh load redis -P workloads/workloada -p "redis.host=redis1" -p "redis.port=6379" -p recordcount=100000 -p operationcount=100000 -threads 16
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh run redis -P workloads/workloada -p "redis.host=redis1" -p "redis.port=6379" -p recordcount=100000 -p operationcount=100000 -threads 16
+# redis 5 nodes workloada rep4
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh load redis -P workloads/workloada -p "redis.host=redis1" -p "redis.port=6379" -p recordcount=100000 -p operationcount=100000 -threads 16
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh run redis -P workloads/workloada -p "redis.host=redis1" -p "redis.port=6379" -p recordcount=100000 -p operationcount=100000 -threads 16
+# redis 5 nodes workloada rep5
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh load redis -P workloads/workloada -p "redis.host=redis1" -p "redis.port=6379" -p recordcount=100000 -p operationcount=100000 -threads 16
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh run redis -P workloads/workloada -p "redis.host=redis1" -p "redis.port=6379" -p recordcount=100000 -p operationcount=100000 -threads 16
+# redis 5 nodes workloada rep6
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh load redis -P workloads/workloada -p "redis.host=redis1" -p "redis.port=6379" -p recordcount=100000 -p operationcount=100000 -threads 16
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh run redis -P workloads/workloada -p "redis.host=redis1" -p "redis.port=6379" -p recordcount=100000 -p operationcount=100000 -threads 16
+# redis 5 nodes workloada rep7
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh load redis -P workloads/workloada -p "redis.host=redis1" -p "redis.port=6379" -p recordcount=100000 -p operationcount=100000 -threads 16
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh run redis -P workloads/workloada -p "redis.host=redis1" -p "redis.port=6379" -p recordcount=100000 -p operationcount=100000 -threads 16
+# redis 5 nodes workloada rep8
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh load redis -P workloads/workloada -p "redis.host=redis1" -p "redis.port=6379" -p recordcount=100000 -p operationcount=100000 -threads 16
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh run redis -P workloads/workloada -p "redis.host=redis1" -p "redis.port=6379" -p recordcount=100000 -p operationcount=100000 -threads 16
+# redis 5 nodes workloada rep9
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh load redis -P workloads/workloada -p "redis.host=redis1" -p "redis.port=6379" -p recordcount=100000 -p operationcount=100000 -threads 16
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh run redis -P workloads/workloada -p "redis.host=redis1" -p "redis.port=6379" -p recordcount=100000 -p operationcount=100000 -threads 16
+# redis 5 nodes workloada rep10
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh load redis -P workloads/workloada -p "redis.host=redis1" -p "redis.port=6379" -p recordcount=100000 -p operationcount=100000 -threads 16
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh run redis -P workloads/workloada -p "redis.host=redis1" -p "redis.port=6379" -p recordcount=100000 -p operationcount=100000 -threads 16
+# redis 5 nodes workloadb rep1
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh load redis -P workloads/workloadb -p "redis.host=redis1" -p "redis.port=6379" -p recordcount=100000 -p operationcount=100000 -threads 16
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh run redis -P workloads/workloadb -p "redis.host=redis1" -p "redis.port=6379" -p recordcount=100000 -p operationcount=100000 -threads 16
+# redis 5 nodes workloadb rep2
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh load redis -P workloads/workloadb -p "redis.host=redis1" -p "redis.port=6379" -p recordcount=100000 -p operationcount=100000 -threads 16
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh run redis -P workloads/workloadb -p "redis.host=redis1" -p "redis.port=6379" -p recordcount=100000 -p operationcount=100000 -threads 16
+# redis 5 nodes workloadb rep3
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh load redis -P workloads/workloadb -p "redis.host=redis1" -p "redis.port=6379" -p recordcount=100000 -p operationcount=100000 -threads 16
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh run redis -P workloads/workloadb -p "redis.host=redis1" -p "redis.port=6379" -p recordcount=100000 -p operationcount=100000 -threads 16
+# redis 5 nodes workloadb rep4
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh load redis -P workloads/workloadb -p "redis.host=redis1" -p "redis.port=6379" -p recordcount=100000 -p operationcount=100000 -threads 16
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh run redis -P workloads/workloadb -p "redis.host=redis1" -p "redis.port=6379" -p recordcount=100000 -p operationcount=100000 -threads 16
+# redis 5 nodes workloadb rep5
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh load redis -P workloads/workloadb -p "redis.host=redis1" -p "redis.port=6379" -p recordcount=100000 -p operationcount=100000 -threads 16
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh run redis -P workloads/workloadb -p "redis.host=redis1" -p "redis.port=6379" -p recordcount=100000 -p operationcount=100000 -threads 16
+# redis 5 nodes workloadb rep6
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh load redis -P workloads/workloadb -p "redis.host=redis1" -p "redis.port=6379" -p recordcount=100000 -p operationcount=100000 -threads 16
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh run redis -P workloads/workloadb -p "redis.host=redis1" -p "redis.port=6379" -p recordcount=100000 -p operationcount=100000 -threads 16
+# redis 5 nodes workloadb rep7
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh load redis -P workloads/workloadb -p "redis.host=redis1" -p "redis.port=6379" -p recordcount=100000 -p operationcount=100000 -threads 16
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh run redis -P workloads/workloadb -p "redis.host=redis1" -p "redis.port=6379" -p recordcount=100000 -p operationcount=100000 -threads 16
+# redis 5 nodes workloadb rep8
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh load redis -P workloads/workloadb -p "redis.host=redis1" -p "redis.port=6379" -p recordcount=100000 -p operationcount=100000 -threads 16
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh run redis -P workloads/workloadb -p "redis.host=redis1" -p "redis.port=6379" -p recordcount=100000 -p operationcount=100000 -threads 16
+# redis 5 nodes workloadb rep9
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh load redis -P workloads/workloadb -p "redis.host=redis1" -p "redis.port=6379" -p recordcount=100000 -p operationcount=100000 -threads 16
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh run redis -P workloads/workloadb -p "redis.host=redis1" -p "redis.port=6379" -p recordcount=100000 -p operationcount=100000 -threads 16
+# redis 5 nodes workloadb rep10
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh load redis -P workloads/workloadb -p "redis.host=redis1" -p "redis.port=6379" -p recordcount=100000 -p operationcount=100000 -threads 16
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh run redis -P workloads/workloadb -p "redis.host=redis1" -p "redis.port=6379" -p recordcount=100000 -p operationcount=100000 -threads 16
+# redis 5 nodes workloadc rep1
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh load redis -P workloads/workloadc -p "redis.host=redis1" -p "redis.port=6379" -p recordcount=100000 -p operationcount=100000 -threads 16
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh run redis -P workloads/workloadc -p "redis.host=redis1" -p "redis.port=6379" -p recordcount=100000 -p operationcount=100000 -threads 16
+# redis 5 nodes workloadc rep2
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh load redis -P workloads/workloadc -p "redis.host=redis1" -p "redis.port=6379" -p recordcount=100000 -p operationcount=100000 -threads 16
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh run redis -P workloads/workloadc -p "redis.host=redis1" -p "redis.port=6379" -p recordcount=100000 -p operationcount=100000 -threads 16
+# redis 5 nodes workloadc rep3
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh load redis -P workloads/workloadc -p "redis.host=redis1" -p "redis.port=6379" -p recordcount=100000 -p operationcount=100000 -threads 16
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh run redis -P workloads/workloadc -p "redis.host=redis1" -p "redis.port=6379" -p recordcount=100000 -p operationcount=100000 -threads 16
+# redis 5 nodes workloadc rep4
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh load redis -P workloads/workloadc -p "redis.host=redis1" -p "redis.port=6379" -p recordcount=100000 -p operationcount=100000 -threads 16
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh run redis -P workloads/workloadc -p "redis.host=redis1" -p "redis.port=6379" -p recordcount=100000 -p operationcount=100000 -threads 16
+# redis 5 nodes workloadc rep5
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh load redis -P workloads/workloadc -p "redis.host=redis1" -p "redis.port=6379" -p recordcount=100000 -p operationcount=100000 -threads 16
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh run redis -P workloads/workloadc -p "redis.host=redis1" -p "redis.port=6379" -p recordcount=100000 -p operationcount=100000 -threads 16
+# redis 5 nodes workloadc rep6
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh load redis -P workloads/workloadc -p "redis.host=redis1" -p "redis.port=6379" -p recordcount=100000 -p operationcount=100000 -threads 16
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh run redis -P workloads/workloadc -p "redis.host=redis1" -p "redis.port=6379" -p recordcount=100000 -p operationcount=100000 -threads 16
+# redis 5 nodes workloadc rep7
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh load redis -P workloads/workloadc -p "redis.host=redis1" -p "redis.port=6379" -p recordcount=100000 -p operationcount=100000 -threads 16
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh run redis -P workloads/workloadc -p "redis.host=redis1" -p "redis.port=6379" -p recordcount=100000 -p operationcount=100000 -threads 16
+# redis 5 nodes workloadc rep8
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh load redis -P workloads/workloadc -p "redis.host=redis1" -p "redis.port=6379" -p recordcount=100000 -p operationcount=100000 -threads 16
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh run redis -P workloads/workloadc -p "redis.host=redis1" -p "redis.port=6379" -p recordcount=100000 -p operationcount=100000 -threads 16
+# redis 5 nodes workloadc rep9
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh load redis -P workloads/workloadc -p "redis.host=redis1" -p "redis.port=6379" -p recordcount=100000 -p operationcount=100000 -threads 16
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh run redis -P workloads/workloadc -p "redis.host=redis1" -p "redis.port=6379" -p recordcount=100000 -p operationcount=100000 -threads 16
+# redis 5 nodes workloadc rep10
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh load redis -P workloads/workloadc -p "redis.host=redis1" -p "redis.port=6379" -p recordcount=100000 -p operationcount=100000 -threads 16
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh run redis -P workloads/workloadc -p "redis.host=redis1" -p "redis.port=6379" -p recordcount=100000 -p operationcount=100000 -threads 16
+# redis 5 nodes workloadd rep1
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh load redis -P workloads/workloadd -p "redis.host=redis1" -p "redis.port=6379" -p recordcount=100000 -p operationcount=100000 -threads 16
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh run redis -P workloads/workloadd -p "redis.host=redis1" -p "redis.port=6379" -p recordcount=100000 -p operationcount=100000 -threads 16
+# redis 5 nodes workloadd rep2
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh load redis -P workloads/workloadd -p "redis.host=redis1" -p "redis.port=6379" -p recordcount=100000 -p operationcount=100000 -threads 16
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh run redis -P workloads/workloadd -p "redis.host=redis1" -p "redis.port=6379" -p recordcount=100000 -p operationcount=100000 -threads 16
+# redis 5 nodes workloadd rep3
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh load redis -P workloads/workloadd -p "redis.host=redis1" -p "redis.port=6379" -p recordcount=100000 -p operationcount=100000 -threads 16
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh run redis -P workloads/workloadd -p "redis.host=redis1" -p "redis.port=6379" -p recordcount=100000 -p operationcount=100000 -threads 16
+# redis 5 nodes workloadd rep4
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh load redis -P workloads/workloadd -p "redis.host=redis1" -p "redis.port=6379" -p recordcount=100000 -p operationcount=100000 -threads 16
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh run redis -P workloads/workloadd -p "redis.host=redis1" -p "redis.port=6379" -p recordcount=100000 -p operationcount=100000 -threads 16
+# redis 5 nodes workloadd rep5
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh load redis -P workloads/workloadd -p "redis.host=redis1" -p "redis.port=6379" -p recordcount=100000 -p operationcount=100000 -threads 16
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh run redis -P workloads/workloadd -p "redis.host=redis1" -p "redis.port=6379" -p recordcount=100000 -p operationcount=100000 -threads 16
+# redis 5 nodes workloadd rep6
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh load redis -P workloads/workloadd -p "redis.host=redis1" -p "redis.port=6379" -p recordcount=100000 -p operationcount=100000 -threads 16
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh run redis -P workloads/workloadd -p "redis.host=redis1" -p "redis.port=6379" -p recordcount=100000 -p operationcount=100000 -threads 16
+# redis 5 nodes workloadd rep7
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh load redis -P workloads/workloadd -p "redis.host=redis1" -p "redis.port=6379" -p recordcount=100000 -p operationcount=100000 -threads 16
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh run redis -P workloads/workloadd -p "redis.host=redis1" -p "redis.port=6379" -p recordcount=100000 -p operationcount=100000 -threads 16
+# redis 5 nodes workloadd rep8
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh load redis -P workloads/workloadd -p "redis.host=redis1" -p "redis.port=6379" -p recordcount=100000 -p operationcount=100000 -threads 16
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh run redis -P workloads/workloadd -p "redis.host=redis1" -p "redis.port=6379" -p recordcount=100000 -p operationcount=100000 -threads 16
+# redis 5 nodes workloadd rep9
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh load redis -P workloads/workloadd -p "redis.host=redis1" -p "redis.port=6379" -p recordcount=100000 -p operationcount=100000 -threads 16
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh run redis -P workloads/workloadd -p "redis.host=redis1" -p "redis.port=6379" -p recordcount=100000 -p operationcount=100000 -threads 16
+# redis 5 nodes workloadd rep10
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh load redis -P workloads/workloadd -p "redis.host=redis1" -p "redis.port=6379" -p recordcount=100000 -p operationcount=100000 -threads 16
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh run redis -P workloads/workloadd -p "redis.host=redis1" -p "redis.port=6379" -p recordcount=100000 -p operationcount=100000 -threads 16
+# redis 5 nodes workloade rep1
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh load redis -P workloads/workloade -p "redis.host=redis1" -p "redis.port=6379" -p recordcount=100000 -p operationcount=100000 -threads 16
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh run redis -P workloads/workloade -p "redis.host=redis1" -p "redis.port=6379" -p recordcount=100000 -p operationcount=100000 -threads 16
+# redis 5 nodes workloade rep2
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh load redis -P workloads/workloade -p "redis.host=redis1" -p "redis.port=6379" -p recordcount=100000 -p operationcount=100000 -threads 16
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh run redis -P workloads/workloade -p "redis.host=redis1" -p "redis.port=6379" -p recordcount=100000 -p operationcount=100000 -threads 16
+# redis 5 nodes workloade rep3
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh load redis -P workloads/workloade -p "redis.host=redis1" -p "redis.port=6379" -p recordcount=100000 -p operationcount=100000 -threads 16
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh run redis -P workloads/workloade -p "redis.host=redis1" -p "redis.port=6379" -p recordcount=100000 -p operationcount=100000 -threads 16
+# redis 5 nodes workloade rep4
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh load redis -P workloads/workloade -p "redis.host=redis1" -p "redis.port=6379" -p recordcount=100000 -p operationcount=100000 -threads 16
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh run redis -P workloads/workloade -p "redis.host=redis1" -p "redis.port=6379" -p recordcount=100000 -p operationcount=100000 -threads 16
+# redis 5 nodes workloade rep5
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh load redis -P workloads/workloade -p "redis.host=redis1" -p "redis.port=6379" -p recordcount=100000 -p operationcount=100000 -threads 16
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh run redis -P workloads/workloade -p "redis.host=redis1" -p "redis.port=6379" -p recordcount=100000 -p operationcount=100000 -threads 16
+# redis 5 nodes workloade rep6
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh load redis -P workloads/workloade -p "redis.host=redis1" -p "redis.port=6379" -p recordcount=100000 -p operationcount=100000 -threads 16
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh run redis -P workloads/workloade -p "redis.host=redis1" -p "redis.port=6379" -p recordcount=100000 -p operationcount=100000 -threads 16
+# redis 5 nodes workloade rep7
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh load redis -P workloads/workloade -p "redis.host=redis1" -p "redis.port=6379" -p recordcount=100000 -p operationcount=100000 -threads 16
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh run redis -P workloads/workloade -p "redis.host=redis1" -p "redis.port=6379" -p recordcount=100000 -p operationcount=100000 -threads 16
+# redis 5 nodes workloade rep8
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh load redis -P workloads/workloade -p "redis.host=redis1" -p "redis.port=6379" -p recordcount=100000 -p operationcount=100000 -threads 16
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh run redis -P workloads/workloade -p "redis.host=redis1" -p "redis.port=6379" -p recordcount=100000 -p operationcount=100000 -threads 16
+# redis 5 nodes workloade rep9
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh load redis -P workloads/workloade -p "redis.host=redis1" -p "redis.port=6379" -p recordcount=100000 -p operationcount=100000 -threads 16
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh run redis -P workloads/workloade -p "redis.host=redis1" -p "redis.port=6379" -p recordcount=100000 -p operationcount=100000 -threads 16
+# redis 5 nodes workloade rep10
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh load redis -P workloads/workloade -p "redis.host=redis1" -p "redis.port=6379" -p recordcount=100000 -p operationcount=100000 -threads 16
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh run redis -P workloads/workloade -p "redis.host=redis1" -p "redis.port=6379" -p recordcount=100000 -p operationcount=100000 -threads 16
+# mongo 3 nodes workloada rep1
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh load mongodb -P workloads/workloada -p "mongodb.url=mongodb://mongo1:27017,mongo2:27017,mongo3:27017/ycsb?replicaSet=rs0&w=majority" -p recordcount=100000 -p operationcount=100000 -threads 16
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh run mongodb -P workloads/workloada -p "mongodb.url=mongodb://mongo1:27017,mongo2:27017,mongo3:27017/ycsb?replicaSet=rs0&w=majority" -p recordcount=100000 -p operationcount=100000 -threads 16
+# mongo 3 nodes workloada rep2
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh load mongodb -P workloads/workloada -p "mongodb.url=mongodb://mongo1:27017,mongo2:27017,mongo3:27017/ycsb?replicaSet=rs0&w=majority" -p recordcount=100000 -p operationcount=100000 -threads 16
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh run mongodb -P workloads/workloada -p "mongodb.url=mongodb://mongo1:27017,mongo2:27017,mongo3:27017/ycsb?replicaSet=rs0&w=majority" -p recordcount=100000 -p operationcount=100000 -threads 16
+# mongo 3 nodes workloada rep3
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh load mongodb -P workloads/workloada -p "mongodb.url=mongodb://mongo1:27017,mongo2:27017,mongo3:27017/ycsb?replicaSet=rs0&w=majority" -p recordcount=100000 -p operationcount=100000 -threads 16
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh run mongodb -P workloads/workloada -p "mongodb.url=mongodb://mongo1:27017,mongo2:27017,mongo3:27017/ycsb?replicaSet=rs0&w=majority" -p recordcount=100000 -p operationcount=100000 -threads 16
+# mongo 3 nodes workloada rep4
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh load mongodb -P workloads/workloada -p "mongodb.url=mongodb://mongo1:27017,mongo2:27017,mongo3:27017/ycsb?replicaSet=rs0&w=majority" -p recordcount=100000 -p operationcount=100000 -threads 16
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh run mongodb -P workloads/workloada -p "mongodb.url=mongodb://mongo1:27017,mongo2:27017,mongo3:27017/ycsb?replicaSet=rs0&w=majority" -p recordcount=100000 -p operationcount=100000 -threads 16
+# mongo 3 nodes workloada rep5
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh load mongodb -P workloads/workloada -p "mongodb.url=mongodb://mongo1:27017,mongo2:27017,mongo3:27017/ycsb?replicaSet=rs0&w=majority" -p recordcount=100000 -p operationcount=100000 -threads 16
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh run mongodb -P workloads/workloada -p "mongodb.url=mongodb://mongo1:27017,mongo2:27017,mongo3:27017/ycsb?replicaSet=rs0&w=majority" -p recordcount=100000 -p operationcount=100000 -threads 16
+# mongo 3 nodes workloada rep6
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh load mongodb -P workloads/workloada -p "mongodb.url=mongodb://mongo1:27017,mongo2:27017,mongo3:27017/ycsb?replicaSet=rs0&w=majority" -p recordcount=100000 -p operationcount=100000 -threads 16
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh run mongodb -P workloads/workloada -p "mongodb.url=mongodb://mongo1:27017,mongo2:27017,mongo3:27017/ycsb?replicaSet=rs0&w=majority" -p recordcount=100000 -p operationcount=100000 -threads 16
+# mongo 3 nodes workloada rep7
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh load mongodb -P workloads/workloada -p "mongodb.url=mongodb://mongo1:27017,mongo2:27017,mongo3:27017/ycsb?replicaSet=rs0&w=majority" -p recordcount=100000 -p operationcount=100000 -threads 16
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh run mongodb -P workloads/workloada -p "mongodb.url=mongodb://mongo1:27017,mongo2:27017,mongo3:27017/ycsb?replicaSet=rs0&w=majority" -p recordcount=100000 -p operationcount=100000 -threads 16
+# mongo 3 nodes workloada rep8
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh load mongodb -P workloads/workloada -p "mongodb.url=mongodb://mongo1:27017,mongo2:27017,mongo3:27017/ycsb?replicaSet=rs0&w=majority" -p recordcount=100000 -p operationcount=100000 -threads 16
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh run mongodb -P workloads/workloada -p "mongodb.url=mongodb://mongo1:27017,mongo2:27017,mongo3:27017/ycsb?replicaSet=rs0&w=majority" -p recordcount=100000 -p operationcount=100000 -threads 16
+# mongo 3 nodes workloada rep9
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh load mongodb -P workloads/workloada -p "mongodb.url=mongodb://mongo1:27017,mongo2:27017,mongo3:27017/ycsb?replicaSet=rs0&w=majority" -p recordcount=100000 -p operationcount=100000 -threads 16
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh run mongodb -P workloads/workloada -p "mongodb.url=mongodb://mongo1:27017,mongo2:27017,mongo3:27017/ycsb?replicaSet=rs0&w=majority" -p recordcount=100000 -p operationcount=100000 -threads 16
+# mongo 3 nodes workloada rep10
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh load mongodb -P workloads/workloada -p "mongodb.url=mongodb://mongo1:27017,mongo2:27017,mongo3:27017/ycsb?replicaSet=rs0&w=majority" -p recordcount=100000 -p operationcount=100000 -threads 16
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh run mongodb -P workloads/workloada -p "mongodb.url=mongodb://mongo1:27017,mongo2:27017,mongo3:27017/ycsb?replicaSet=rs0&w=majority" -p recordcount=100000 -p operationcount=100000 -threads 16
+# mongo 3 nodes workloadb rep1
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh load mongodb -P workloads/workloadb -p "mongodb.url=mongodb://mongo1:27017,mongo2:27017,mongo3:27017/ycsb?replicaSet=rs0&w=majority" -p recordcount=100000 -p operationcount=100000 -threads 16
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh run mongodb -P workloads/workloadb -p "mongodb.url=mongodb://mongo1:27017,mongo2:27017,mongo3:27017/ycsb?replicaSet=rs0&w=majority" -p recordcount=100000 -p operationcount=100000 -threads 16
+# mongo 3 nodes workloadb rep2
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh load mongodb -P workloads/workloadb -p "mongodb.url=mongodb://mongo1:27017,mongo2:27017,mongo3:27017/ycsb?replicaSet=rs0&w=majority" -p recordcount=100000 -p operationcount=100000 -threads 16
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh run mongodb -P workloads/workloadb -p "mongodb.url=mongodb://mongo1:27017,mongo2:27017,mongo3:27017/ycsb?replicaSet=rs0&w=majority" -p recordcount=100000 -p operationcount=100000 -threads 16
+# mongo 3 nodes workloadb rep3
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh load mongodb -P workloads/workloadb -p "mongodb.url=mongodb://mongo1:27017,mongo2:27017,mongo3:27017/ycsb?replicaSet=rs0&w=majority" -p recordcount=100000 -p operationcount=100000 -threads 16
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh run mongodb -P workloads/workloadb -p "mongodb.url=mongodb://mongo1:27017,mongo2:27017,mongo3:27017/ycsb?replicaSet=rs0&w=majority" -p recordcount=100000 -p operationcount=100000 -threads 16
+# mongo 3 nodes workloadb rep4
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh load mongodb -P workloads/workloadb -p "mongodb.url=mongodb://mongo1:27017,mongo2:27017,mongo3:27017/ycsb?replicaSet=rs0&w=majority" -p recordcount=100000 -p operationcount=100000 -threads 16
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh run mongodb -P workloads/workloadb -p "mongodb.url=mongodb://mongo1:27017,mongo2:27017,mongo3:27017/ycsb?replicaSet=rs0&w=majority" -p recordcount=100000 -p operationcount=100000 -threads 16
+# mongo 3 nodes workloadb rep5
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh load mongodb -P workloads/workloadb -p "mongodb.url=mongodb://mongo1:27017,mongo2:27017,mongo3:27017/ycsb?replicaSet=rs0&w=majority" -p recordcount=100000 -p operationcount=100000 -threads 16
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh run mongodb -P workloads/workloadb -p "mongodb.url=mongodb://mongo1:27017,mongo2:27017,mongo3:27017/ycsb?replicaSet=rs0&w=majority" -p recordcount=100000 -p operationcount=100000 -threads 16
+# mongo 3 nodes workloadb rep6
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh load mongodb -P workloads/workloadb -p "mongodb.url=mongodb://mongo1:27017,mongo2:27017,mongo3:27017/ycsb?replicaSet=rs0&w=majority" -p recordcount=100000 -p operationcount=100000 -threads 16
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh run mongodb -P workloads/workloadb -p "mongodb.url=mongodb://mongo1:27017,mongo2:27017,mongo3:27017/ycsb?replicaSet=rs0&w=majority" -p recordcount=100000 -p operationcount=100000 -threads 16
+# mongo 3 nodes workloadb rep7
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh load mongodb -P workloads/workloadb -p "mongodb.url=mongodb://mongo1:27017,mongo2:27017,mongo3:27017/ycsb?replicaSet=rs0&w=majority" -p recordcount=100000 -p operationcount=100000 -threads 16
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh run mongodb -P workloads/workloadb -p "mongodb.url=mongodb://mongo1:27017,mongo2:27017,mongo3:27017/ycsb?replicaSet=rs0&w=majority" -p recordcount=100000 -p operationcount=100000 -threads 16
+# mongo 3 nodes workloadb rep8
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh load mongodb -P workloads/workloadb -p "mongodb.url=mongodb://mongo1:27017,mongo2:27017,mongo3:27017/ycsb?replicaSet=rs0&w=majority" -p recordcount=100000 -p operationcount=100000 -threads 16
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh run mongodb -P workloads/workloadb -p "mongodb.url=mongodb://mongo1:27017,mongo2:27017,mongo3:27017/ycsb?replicaSet=rs0&w=majority" -p recordcount=100000 -p operationcount=100000 -threads 16
+# mongo 3 nodes workloadb rep9
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh load mongodb -P workloads/workloadb -p "mongodb.url=mongodb://mongo1:27017,mongo2:27017,mongo3:27017/ycsb?replicaSet=rs0&w=majority" -p recordcount=100000 -p operationcount=100000 -threads 16
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh run mongodb -P workloads/workloadb -p "mongodb.url=mongodb://mongo1:27017,mongo2:27017,mongo3:27017/ycsb?replicaSet=rs0&w=majority" -p recordcount=100000 -p operationcount=100000 -threads 16
+# mongo 3 nodes workloadb rep10
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh load mongodb -P workloads/workloadb -p "mongodb.url=mongodb://mongo1:27017,mongo2:27017,mongo3:27017/ycsb?replicaSet=rs0&w=majority" -p recordcount=100000 -p operationcount=100000 -threads 16
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh run mongodb -P workloads/workloadb -p "mongodb.url=mongodb://mongo1:27017,mongo2:27017,mongo3:27017/ycsb?replicaSet=rs0&w=majority" -p recordcount=100000 -p operationcount=100000 -threads 16
+# mongo 3 nodes workloadc rep1
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh load mongodb -P workloads/workloadc -p "mongodb.url=mongodb://mongo1:27017,mongo2:27017,mongo3:27017/ycsb?replicaSet=rs0&w=majority" -p recordcount=100000 -p operationcount=100000 -threads 16
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh run mongodb -P workloads/workloadc -p "mongodb.url=mongodb://mongo1:27017,mongo2:27017,mongo3:27017/ycsb?replicaSet=rs0&w=majority" -p recordcount=100000 -p operationcount=100000 -threads 16
+# mongo 3 nodes workloadc rep2
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh load mongodb -P workloads/workloadc -p "mongodb.url=mongodb://mongo1:27017,mongo2:27017,mongo3:27017/ycsb?replicaSet=rs0&w=majority" -p recordcount=100000 -p operationcount=100000 -threads 16
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh run mongodb -P workloads/workloadc -p "mongodb.url=mongodb://mongo1:27017,mongo2:27017,mongo3:27017/ycsb?replicaSet=rs0&w=majority" -p recordcount=100000 -p operationcount=100000 -threads 16
+# mongo 3 nodes workloadc rep3
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh load mongodb -P workloads/workloadc -p "mongodb.url=mongodb://mongo1:27017,mongo2:27017,mongo3:27017/ycsb?replicaSet=rs0&w=majority" -p recordcount=100000 -p operationcount=100000 -threads 16
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh run mongodb -P workloads/workloadc -p "mongodb.url=mongodb://mongo1:27017,mongo2:27017,mongo3:27017/ycsb?replicaSet=rs0&w=majority" -p recordcount=100000 -p operationcount=100000 -threads 16
+# mongo 3 nodes workloadc rep4
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh load mongodb -P workloads/workloadc -p "mongodb.url=mongodb://mongo1:27017,mongo2:27017,mongo3:27017/ycsb?replicaSet=rs0&w=majority" -p recordcount=100000 -p operationcount=100000 -threads 16
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh run mongodb -P workloads/workloadc -p "mongodb.url=mongodb://mongo1:27017,mongo2:27017,mongo3:27017/ycsb?replicaSet=rs0&w=majority" -p recordcount=100000 -p operationcount=100000 -threads 16
+# mongo 3 nodes workloadc rep5
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh load mongodb -P workloads/workloadc -p "mongodb.url=mongodb://mongo1:27017,mongo2:27017,mongo3:27017/ycsb?replicaSet=rs0&w=majority" -p recordcount=100000 -p operationcount=100000 -threads 16
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh run mongodb -P workloads/workloadc -p "mongodb.url=mongodb://mongo1:27017,mongo2:27017,mongo3:27017/ycsb?replicaSet=rs0&w=majority" -p recordcount=100000 -p operationcount=100000 -threads 16
+# mongo 3 nodes workloadc rep6
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh load mongodb -P workloads/workloadc -p "mongodb.url=mongodb://mongo1:27017,mongo2:27017,mongo3:27017/ycsb?replicaSet=rs0&w=majority" -p recordcount=100000 -p operationcount=100000 -threads 16
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh run mongodb -P workloads/workloadc -p "mongodb.url=mongodb://mongo1:27017,mongo2:27017,mongo3:27017/ycsb?replicaSet=rs0&w=majority" -p recordcount=100000 -p operationcount=100000 -threads 16
+# mongo 3 nodes workloadc rep7
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh load mongodb -P workloads/workloadc -p "mongodb.url=mongodb://mongo1:27017,mongo2:27017,mongo3:27017/ycsb?replicaSet=rs0&w=majority" -p recordcount=100000 -p operationcount=100000 -threads 16
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh run mongodb -P workloads/workloadc -p "mongodb.url=mongodb://mongo1:27017,mongo2:27017,mongo3:27017/ycsb?replicaSet=rs0&w=majority" -p recordcount=100000 -p operationcount=100000 -threads 16
+# mongo 3 nodes workloadc rep8
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh load mongodb -P workloads/workloadc -p "mongodb.url=mongodb://mongo1:27017,mongo2:27017,mongo3:27017/ycsb?replicaSet=rs0&w=majority" -p recordcount=100000 -p operationcount=100000 -threads 16
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh run mongodb -P workloads/workloadc -p "mongodb.url=mongodb://mongo1:27017,mongo2:27017,mongo3:27017/ycsb?replicaSet=rs0&w=majority" -p recordcount=100000 -p operationcount=100000 -threads 16
+# mongo 3 nodes workloadc rep9
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh load mongodb -P workloads/workloadc -p "mongodb.url=mongodb://mongo1:27017,mongo2:27017,mongo3:27017/ycsb?replicaSet=rs0&w=majority" -p recordcount=100000 -p operationcount=100000 -threads 16
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh run mongodb -P workloads/workloadc -p "mongodb.url=mongodb://mongo1:27017,mongo2:27017,mongo3:27017/ycsb?replicaSet=rs0&w=majority" -p recordcount=100000 -p operationcount=100000 -threads 16
+# mongo 3 nodes workloadc rep10
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh load mongodb -P workloads/workloadc -p "mongodb.url=mongodb://mongo1:27017,mongo2:27017,mongo3:27017/ycsb?replicaSet=rs0&w=majority" -p recordcount=100000 -p operationcount=100000 -threads 16
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh run mongodb -P workloads/workloadc -p "mongodb.url=mongodb://mongo1:27017,mongo2:27017,mongo3:27017/ycsb?replicaSet=rs0&w=majority" -p recordcount=100000 -p operationcount=100000 -threads 16
+# mongo 3 nodes workloadd rep1
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh load mongodb -P workloads/workloadd -p "mongodb.url=mongodb://mongo1:27017,mongo2:27017,mongo3:27017/ycsb?replicaSet=rs0&w=majority" -p recordcount=100000 -p operationcount=100000 -threads 16
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh run mongodb -P workloads/workloadd -p "mongodb.url=mongodb://mongo1:27017,mongo2:27017,mongo3:27017/ycsb?replicaSet=rs0&w=majority" -p recordcount=100000 -p operationcount=100000 -threads 16
+# mongo 3 nodes workloadd rep2
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh load mongodb -P workloads/workloadd -p "mongodb.url=mongodb://mongo1:27017,mongo2:27017,mongo3:27017/ycsb?replicaSet=rs0&w=majority" -p recordcount=100000 -p operationcount=100000 -threads 16
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh run mongodb -P workloads/workloadd -p "mongodb.url=mongodb://mongo1:27017,mongo2:27017,mongo3:27017/ycsb?replicaSet=rs0&w=majority" -p recordcount=100000 -p operationcount=100000 -threads 16
+# mongo 3 nodes workloadd rep3
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh load mongodb -P workloads/workloadd -p "mongodb.url=mongodb://mongo1:27017,mongo2:27017,mongo3:27017/ycsb?replicaSet=rs0&w=majority" -p recordcount=100000 -p operationcount=100000 -threads 16
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh run mongodb -P workloads/workloadd -p "mongodb.url=mongodb://mongo1:27017,mongo2:27017,mongo3:27017/ycsb?replicaSet=rs0&w=majority" -p recordcount=100000 -p operationcount=100000 -threads 16
+# mongo 3 nodes workloadd rep4
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh load mongodb -P workloads/workloadd -p "mongodb.url=mongodb://mongo1:27017,mongo2:27017,mongo3:27017/ycsb?replicaSet=rs0&w=majority" -p recordcount=100000 -p operationcount=100000 -threads 16
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh run mongodb -P workloads/workloadd -p "mongodb.url=mongodb://mongo1:27017,mongo2:27017,mongo3:27017/ycsb?replicaSet=rs0&w=majority" -p recordcount=100000 -p operationcount=100000 -threads 16
+# mongo 3 nodes workloadd rep5
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh load mongodb -P workloads/workloadd -p "mongodb.url=mongodb://mongo1:27017,mongo2:27017,mongo3:27017/ycsb?replicaSet=rs0&w=majority" -p recordcount=100000 -p operationcount=100000 -threads 16
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh run mongodb -P workloads/workloadd -p "mongodb.url=mongodb://mongo1:27017,mongo2:27017,mongo3:27017/ycsb?replicaSet=rs0&w=majority" -p recordcount=100000 -p operationcount=100000 -threads 16
+# mongo 3 nodes workloadd rep6
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh load mongodb -P workloads/workloadd -p "mongodb.url=mongodb://mongo1:27017,mongo2:27017,mongo3:27017/ycsb?replicaSet=rs0&w=majority" -p recordcount=100000 -p operationcount=100000 -threads 16
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh run mongodb -P workloads/workloadd -p "mongodb.url=mongodb://mongo1:27017,mongo2:27017,mongo3:27017/ycsb?replicaSet=rs0&w=majority" -p recordcount=100000 -p operationcount=100000 -threads 16
+# mongo 3 nodes workloadd rep7
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh load mongodb -P workloads/workloadd -p "mongodb.url=mongodb://mongo1:27017,mongo2:27017,mongo3:27017/ycsb?replicaSet=rs0&w=majority" -p recordcount=100000 -p operationcount=100000 -threads 16
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh run mongodb -P workloads/workloadd -p "mongodb.url=mongodb://mongo1:27017,mongo2:27017,mongo3:27017/ycsb?replicaSet=rs0&w=majority" -p recordcount=100000 -p operationcount=100000 -threads 16
+# mongo 3 nodes workloadd rep8
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh load mongodb -P workloads/workloadd -p "mongodb.url=mongodb://mongo1:27017,mongo2:27017,mongo3:27017/ycsb?replicaSet=rs0&w=majority" -p recordcount=100000 -p operationcount=100000 -threads 16
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh run mongodb -P workloads/workloadd -p "mongodb.url=mongodb://mongo1:27017,mongo2:27017,mongo3:27017/ycsb?replicaSet=rs0&w=majority" -p recordcount=100000 -p operationcount=100000 -threads 16
+# mongo 3 nodes workloadd rep9
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh load mongodb -P workloads/workloadd -p "mongodb.url=mongodb://mongo1:27017,mongo2:27017,mongo3:27017/ycsb?replicaSet=rs0&w=majority" -p recordcount=100000 -p operationcount=100000 -threads 16
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh run mongodb -P workloads/workloadd -p "mongodb.url=mongodb://mongo1:27017,mongo2:27017,mongo3:27017/ycsb?replicaSet=rs0&w=majority" -p recordcount=100000 -p operationcount=100000 -threads 16
+# mongo 3 nodes workloadd rep10
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh load mongodb -P workloads/workloadd -p "mongodb.url=mongodb://mongo1:27017,mongo2:27017,mongo3:27017/ycsb?replicaSet=rs0&w=majority" -p recordcount=100000 -p operationcount=100000 -threads 16
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh run mongodb -P workloads/workloadd -p "mongodb.url=mongodb://mongo1:27017,mongo2:27017,mongo3:27017/ycsb?replicaSet=rs0&w=majority" -p recordcount=100000 -p operationcount=100000 -threads 16
+# mongo 3 nodes workloade rep1
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh load mongodb -P workloads/workloade -p "mongodb.url=mongodb://mongo1:27017,mongo2:27017,mongo3:27017/ycsb?replicaSet=rs0&w=majority" -p recordcount=100000 -p operationcount=100000 -threads 16
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh run mongodb -P workloads/workloade -p "mongodb.url=mongodb://mongo1:27017,mongo2:27017,mongo3:27017/ycsb?replicaSet=rs0&w=majority" -p recordcount=100000 -p operationcount=100000 -threads 16
+# mongo 3 nodes workloade rep2
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh load mongodb -P workloads/workloade -p "mongodb.url=mongodb://mongo1:27017,mongo2:27017,mongo3:27017/ycsb?replicaSet=rs0&w=majority" -p recordcount=100000 -p operationcount=100000 -threads 16
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh run mongodb -P workloads/workloade -p "mongodb.url=mongodb://mongo1:27017,mongo2:27017,mongo3:27017/ycsb?replicaSet=rs0&w=majority" -p recordcount=100000 -p operationcount=100000 -threads 16
+# mongo 3 nodes workloade rep3
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh load mongodb -P workloads/workloade -p "mongodb.url=mongodb://mongo1:27017,mongo2:27017,mongo3:27017/ycsb?replicaSet=rs0&w=majority" -p recordcount=100000 -p operationcount=100000 -threads 16
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh run mongodb -P workloads/workloade -p "mongodb.url=mongodb://mongo1:27017,mongo2:27017,mongo3:27017/ycsb?replicaSet=rs0&w=majority" -p recordcount=100000 -p operationcount=100000 -threads 16
+# mongo 3 nodes workloade rep4
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh load mongodb -P workloads/workloade -p "mongodb.url=mongodb://mongo1:27017,mongo2:27017,mongo3:27017/ycsb?replicaSet=rs0&w=majority" -p recordcount=100000 -p operationcount=100000 -threads 16
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh run mongodb -P workloads/workloade -p "mongodb.url=mongodb://mongo1:27017,mongo2:27017,mongo3:27017/ycsb?replicaSet=rs0&w=majority" -p recordcount=100000 -p operationcount=100000 -threads 16
+# mongo 3 nodes workloade rep5
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh load mongodb -P workloads/workloade -p "mongodb.url=mongodb://mongo1:27017,mongo2:27017,mongo3:27017/ycsb?replicaSet=rs0&w=majority" -p recordcount=100000 -p operationcount=100000 -threads 16
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh run mongodb -P workloads/workloade -p "mongodb.url=mongodb://mongo1:27017,mongo2:27017,mongo3:27017/ycsb?replicaSet=rs0&w=majority" -p recordcount=100000 -p operationcount=100000 -threads 16
+# mongo 3 nodes workloade rep6
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh load mongodb -P workloads/workloade -p "mongodb.url=mongodb://mongo1:27017,mongo2:27017,mongo3:27017/ycsb?replicaSet=rs0&w=majority" -p recordcount=100000 -p operationcount=100000 -threads 16
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh run mongodb -P workloads/workloade -p "mongodb.url=mongodb://mongo1:27017,mongo2:27017,mongo3:27017/ycsb?replicaSet=rs0&w=majority" -p recordcount=100000 -p operationcount=100000 -threads 16
+# mongo 3 nodes workloade rep7
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh load mongodb -P workloads/workloade -p "mongodb.url=mongodb://mongo1:27017,mongo2:27017,mongo3:27017/ycsb?replicaSet=rs0&w=majority" -p recordcount=100000 -p operationcount=100000 -threads 16
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh run mongodb -P workloads/workloade -p "mongodb.url=mongodb://mongo1:27017,mongo2:27017,mongo3:27017/ycsb?replicaSet=rs0&w=majority" -p recordcount=100000 -p operationcount=100000 -threads 16
+# mongo 3 nodes workloade rep8
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh load mongodb -P workloads/workloade -p "mongodb.url=mongodb://mongo1:27017,mongo2:27017,mongo3:27017/ycsb?replicaSet=rs0&w=majority" -p recordcount=100000 -p operationcount=100000 -threads 16
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh run mongodb -P workloads/workloade -p "mongodb.url=mongodb://mongo1:27017,mongo2:27017,mongo3:27017/ycsb?replicaSet=rs0&w=majority" -p recordcount=100000 -p operationcount=100000 -threads 16
+# mongo 3 nodes workloade rep9
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh load mongodb -P workloads/workloade -p "mongodb.url=mongodb://mongo1:27017,mongo2:27017,mongo3:27017/ycsb?replicaSet=rs0&w=majority" -p recordcount=100000 -p operationcount=100000 -threads 16
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh run mongodb -P workloads/workloade -p "mongodb.url=mongodb://mongo1:27017,mongo2:27017,mongo3:27017/ycsb?replicaSet=rs0&w=majority" -p recordcount=100000 -p operationcount=100000 -threads 16
+# mongo 3 nodes workloade rep10
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh load mongodb -P workloads/workloade -p "mongodb.url=mongodb://mongo1:27017,mongo2:27017,mongo3:27017/ycsb?replicaSet=rs0&w=majority" -p recordcount=100000 -p operationcount=100000 -threads 16
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh run mongodb -P workloads/workloade -p "mongodb.url=mongodb://mongo1:27017,mongo2:27017,mongo3:27017/ycsb?replicaSet=rs0&w=majority" -p recordcount=100000 -p operationcount=100000 -threads 16
+# mongo 5 nodes workloada rep1
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh load mongodb -P workloads/workloada -p "mongodb.url=mongodb://mongo1:27017,mongo2:27017,mongo3:27017,mongo4:27017,mongo5:27017/ycsb?replicaSet=rs0&w=majority" -p recordcount=100000 -p operationcount=100000 -threads 16
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh run mongodb -P workloads/workloada -p "mongodb.url=mongodb://mongo1:27017,mongo2:27017,mongo3:27017,mongo4:27017,mongo5:27017/ycsb?replicaSet=rs0&w=majority" -p recordcount=100000 -p operationcount=100000 -threads 16
+# mongo 5 nodes workloada rep2
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh load mongodb -P workloads/workloada -p "mongodb.url=mongodb://mongo1:27017,mongo2:27017,mongo3:27017,mongo4:27017,mongo5:27017/ycsb?replicaSet=rs0&w=majority" -p recordcount=100000 -p operationcount=100000 -threads 16
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh run mongodb -P workloads/workloada -p "mongodb.url=mongodb://mongo1:27017,mongo2:27017,mongo3:27017,mongo4:27017,mongo5:27017/ycsb?replicaSet=rs0&w=majority" -p recordcount=100000 -p operationcount=100000 -threads 16
+# mongo 5 nodes workloada rep3
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh load mongodb -P workloads/workloada -p "mongodb.url=mongodb://mongo1:27017,mongo2:27017,mongo3:27017,mongo4:27017,mongo5:27017/ycsb?replicaSet=rs0&w=majority" -p recordcount=100000 -p operationcount=100000 -threads 16
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh run mongodb -P workloads/workloada -p "mongodb.url=mongodb://mongo1:27017,mongo2:27017,mongo3:27017,mongo4:27017,mongo5:27017/ycsb?replicaSet=rs0&w=majority" -p recordcount=100000 -p operationcount=100000 -threads 16
+# mongo 5 nodes workloada rep4
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh load mongodb -P workloads/workloada -p "mongodb.url=mongodb://mongo1:27017,mongo2:27017,mongo3:27017,mongo4:27017,mongo5:27017/ycsb?replicaSet=rs0&w=majority" -p recordcount=100000 -p operationcount=100000 -threads 16
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh run mongodb -P workloads/workloada -p "mongodb.url=mongodb://mongo1:27017,mongo2:27017,mongo3:27017,mongo4:27017,mongo5:27017/ycsb?replicaSet=rs0&w=majority" -p recordcount=100000 -p operationcount=100000 -threads 16
+# mongo 5 nodes workloada rep5
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh load mongodb -P workloads/workloada -p "mongodb.url=mongodb://mongo1:27017,mongo2:27017,mongo3:27017,mongo4:27017,mongo5:27017/ycsb?replicaSet=rs0&w=majority" -p recordcount=100000 -p operationcount=100000 -threads 16
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh run mongodb -P workloads/workloada -p "mongodb.url=mongodb://mongo1:27017,mongo2:27017,mongo3:27017,mongo4:27017,mongo5:27017/ycsb?replicaSet=rs0&w=majority" -p recordcount=100000 -p operationcount=100000 -threads 16
+# mongo 5 nodes workloada rep6
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh load mongodb -P workloads/workloada -p "mongodb.url=mongodb://mongo1:27017,mongo2:27017,mongo3:27017,mongo4:27017,mongo5:27017/ycsb?replicaSet=rs0&w=majority" -p recordcount=100000 -p operationcount=100000 -threads 16
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh run mongodb -P workloads/workloada -p "mongodb.url=mongodb://mongo1:27017,mongo2:27017,mongo3:27017,mongo4:27017,mongo5:27017/ycsb?replicaSet=rs0&w=majority" -p recordcount=100000 -p operationcount=100000 -threads 16
+# mongo 5 nodes workloada rep7
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh load mongodb -P workloads/workloada -p "mongodb.url=mongodb://mongo1:27017,mongo2:27017,mongo3:27017,mongo4:27017,mongo5:27017/ycsb?replicaSet=rs0&w=majority" -p recordcount=100000 -p operationcount=100000 -threads 16
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh run mongodb -P workloads/workloada -p "mongodb.url=mongodb://mongo1:27017,mongo2:27017,mongo3:27017,mongo4:27017,mongo5:27017/ycsb?replicaSet=rs0&w=majority" -p recordcount=100000 -p operationcount=100000 -threads 16
+# mongo 5 nodes workloada rep8
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh load mongodb -P workloads/workloada -p "mongodb.url=mongodb://mongo1:27017,mongo2:27017,mongo3:27017,mongo4:27017,mongo5:27017/ycsb?replicaSet=rs0&w=majority" -p recordcount=100000 -p operationcount=100000 -threads 16
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh run mongodb -P workloads/workloada -p "mongodb.url=mongodb://mongo1:27017,mongo2:27017,mongo3:27017,mongo4:27017,mongo5:27017/ycsb?replicaSet=rs0&w=majority" -p recordcount=100000 -p operationcount=100000 -threads 16
+# mongo 5 nodes workloada rep9
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh load mongodb -P workloads/workloada -p "mongodb.url=mongodb://mongo1:27017,mongo2:27017,mongo3:27017,mongo4:27017,mongo5:27017/ycsb?replicaSet=rs0&w=majority" -p recordcount=100000 -p operationcount=100000 -threads 16
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh run mongodb -P workloads/workloada -p "mongodb.url=mongodb://mongo1:27017,mongo2:27017,mongo3:27017,mongo4:27017,mongo5:27017/ycsb?replicaSet=rs0&w=majority" -p recordcount=100000 -p operationcount=100000 -threads 16
+# mongo 5 nodes workloada rep10
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh load mongodb -P workloads/workloada -p "mongodb.url=mongodb://mongo1:27017,mongo2:27017,mongo3:27017,mongo4:27017,mongo5:27017/ycsb?replicaSet=rs0&w=majority" -p recordcount=100000 -p operationcount=100000 -threads 16
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh run mongodb -P workloads/workloada -p "mongodb.url=mongodb://mongo1:27017,mongo2:27017,mongo3:27017,mongo4:27017,mongo5:27017/ycsb?replicaSet=rs0&w=majority" -p recordcount=100000 -p operationcount=100000 -threads 16
+# mongo 5 nodes workloadb rep1
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh load mongodb -P workloads/workloadb -p "mongodb.url=mongodb://mongo1:27017,mongo2:27017,mongo3:27017,mongo4:27017,mongo5:27017/ycsb?replicaSet=rs0&w=majority" -p recordcount=100000 -p operationcount=100000 -threads 16
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh run mongodb -P workloads/workloadb -p "mongodb.url=mongodb://mongo1:27017,mongo2:27017,mongo3:27017,mongo4:27017,mongo5:27017/ycsb?replicaSet=rs0&w=majority" -p recordcount=100000 -p operationcount=100000 -threads 16
+# mongo 5 nodes workloadb rep2
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh load mongodb -P workloads/workloadb -p "mongodb.url=mongodb://mongo1:27017,mongo2:27017,mongo3:27017,mongo4:27017,mongo5:27017/ycsb?replicaSet=rs0&w=majority" -p recordcount=100000 -p operationcount=100000 -threads 16
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh run mongodb -P workloads/workloadb -p "mongodb.url=mongodb://mongo1:27017,mongo2:27017,mongo3:27017,mongo4:27017,mongo5:27017/ycsb?replicaSet=rs0&w=majority" -p recordcount=100000 -p operationcount=100000 -threads 16
+# mongo 5 nodes workloadb rep3
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh load mongodb -P workloads/workloadb -p "mongodb.url=mongodb://mongo1:27017,mongo2:27017,mongo3:27017,mongo4:27017,mongo5:27017/ycsb?replicaSet=rs0&w=majority" -p recordcount=100000 -p operationcount=100000 -threads 16
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh run mongodb -P workloads/workloadb -p "mongodb.url=mongodb://mongo1:27017,mongo2:27017,mongo3:27017,mongo4:27017,mongo5:27017/ycsb?replicaSet=rs0&w=majority" -p recordcount=100000 -p operationcount=100000 -threads 16
+# mongo 5 nodes workloadb rep4
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh load mongodb -P workloads/workloadb -p "mongodb.url=mongodb://mongo1:27017,mongo2:27017,mongo3:27017,mongo4:27017,mongo5:27017/ycsb?replicaSet=rs0&w=majority" -p recordcount=100000 -p operationcount=100000 -threads 16
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh run mongodb -P workloads/workloadb -p "mongodb.url=mongodb://mongo1:27017,mongo2:27017,mongo3:27017,mongo4:27017,mongo5:27017/ycsb?replicaSet=rs0&w=majority" -p recordcount=100000 -p operationcount=100000 -threads 16
+# mongo 5 nodes workloadb rep5
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh load mongodb -P workloads/workloadb -p "mongodb.url=mongodb://mongo1:27017,mongo2:27017,mongo3:27017,mongo4:27017,mongo5:27017/ycsb?replicaSet=rs0&w=majority" -p recordcount=100000 -p operationcount=100000 -threads 16
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh run mongodb -P workloads/workloadb -p "mongodb.url=mongodb://mongo1:27017,mongo2:27017,mongo3:27017,mongo4:27017,mongo5:27017/ycsb?replicaSet=rs0&w=majority" -p recordcount=100000 -p operationcount=100000 -threads 16
+# mongo 5 nodes workloadb rep6
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh load mongodb -P workloads/workloadb -p "mongodb.url=mongodb://mongo1:27017,mongo2:27017,mongo3:27017,mongo4:27017,mongo5:27017/ycsb?replicaSet=rs0&w=majority" -p recordcount=100000 -p operationcount=100000 -threads 16
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh run mongodb -P workloads/workloadb -p "mongodb.url=mongodb://mongo1:27017,mongo2:27017,mongo3:27017,mongo4:27017,mongo5:27017/ycsb?replicaSet=rs0&w=majority" -p recordcount=100000 -p operationcount=100000 -threads 16
+# mongo 5 nodes workloadb rep7
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh load mongodb -P workloads/workloadb -p "mongodb.url=mongodb://mongo1:27017,mongo2:27017,mongo3:27017,mongo4:27017,mongo5:27017/ycsb?replicaSet=rs0&w=majority" -p recordcount=100000 -p operationcount=100000 -threads 16
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh run mongodb -P workloads/workloadb -p "mongodb.url=mongodb://mongo1:27017,mongo2:27017,mongo3:27017,mongo4:27017,mongo5:27017/ycsb?replicaSet=rs0&w=majority" -p recordcount=100000 -p operationcount=100000 -threads 16
+# mongo 5 nodes workloadb rep8
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh load mongodb -P workloads/workloadb -p "mongodb.url=mongodb://mongo1:27017,mongo2:27017,mongo3:27017,mongo4:27017,mongo5:27017/ycsb?replicaSet=rs0&w=majority" -p recordcount=100000 -p operationcount=100000 -threads 16
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh run mongodb -P workloads/workloadb -p "mongodb.url=mongodb://mongo1:27017,mongo2:27017,mongo3:27017,mongo4:27017,mongo5:27017/ycsb?replicaSet=rs0&w=majority" -p recordcount=100000 -p operationcount=100000 -threads 16
+# mongo 5 nodes workloadb rep9
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh load mongodb -P workloads/workloadb -p "mongodb.url=mongodb://mongo1:27017,mongo2:27017,mongo3:27017,mongo4:27017,mongo5:27017/ycsb?replicaSet=rs0&w=majority" -p recordcount=100000 -p operationcount=100000 -threads 16
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh run mongodb -P workloads/workloadb -p "mongodb.url=mongodb://mongo1:27017,mongo2:27017,mongo3:27017,mongo4:27017,mongo5:27017/ycsb?replicaSet=rs0&w=majority" -p recordcount=100000 -p operationcount=100000 -threads 16
+# mongo 5 nodes workloadb rep10
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh load mongodb -P workloads/workloadb -p "mongodb.url=mongodb://mongo1:27017,mongo2:27017,mongo3:27017,mongo4:27017,mongo5:27017/ycsb?replicaSet=rs0&w=majority" -p recordcount=100000 -p operationcount=100000 -threads 16
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh run mongodb -P workloads/workloadb -p "mongodb.url=mongodb://mongo1:27017,mongo2:27017,mongo3:27017,mongo4:27017,mongo5:27017/ycsb?replicaSet=rs0&w=majority" -p recordcount=100000 -p operationcount=100000 -threads 16
+# mongo 5 nodes workloadc rep1
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh load mongodb -P workloads/workloadc -p "mongodb.url=mongodb://mongo1:27017,mongo2:27017,mongo3:27017,mongo4:27017,mongo5:27017/ycsb?replicaSet=rs0&w=majority" -p recordcount=100000 -p operationcount=100000 -threads 16
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh run mongodb -P workloads/workloadc -p "mongodb.url=mongodb://mongo1:27017,mongo2:27017,mongo3:27017,mongo4:27017,mongo5:27017/ycsb?replicaSet=rs0&w=majority" -p recordcount=100000 -p operationcount=100000 -threads 16
+# mongo 5 nodes workloadc rep2
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh load mongodb -P workloads/workloadc -p "mongodb.url=mongodb://mongo1:27017,mongo2:27017,mongo3:27017,mongo4:27017,mongo5:27017/ycsb?replicaSet=rs0&w=majority" -p recordcount=100000 -p operationcount=100000 -threads 16
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh run mongodb -P workloads/workloadc -p "mongodb.url=mongodb://mongo1:27017,mongo2:27017,mongo3:27017,mongo4:27017,mongo5:27017/ycsb?replicaSet=rs0&w=majority" -p recordcount=100000 -p operationcount=100000 -threads 16
+# mongo 5 nodes workloadc rep3
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh load mongodb -P workloads/workloadc -p "mongodb.url=mongodb://mongo1:27017,mongo2:27017,mongo3:27017,mongo4:27017,mongo5:27017/ycsb?replicaSet=rs0&w=majority" -p recordcount=100000 -p operationcount=100000 -threads 16
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh run mongodb -P workloads/workloadc -p "mongodb.url=mongodb://mongo1:27017,mongo2:27017,mongo3:27017,mongo4:27017,mongo5:27017/ycsb?replicaSet=rs0&w=majority" -p recordcount=100000 -p operationcount=100000 -threads 16
+# mongo 5 nodes workloadc rep4
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh load mongodb -P workloads/workloadc -p "mongodb.url=mongodb://mongo1:27017,mongo2:27017,mongo3:27017,mongo4:27017,mongo5:27017/ycsb?replicaSet=rs0&w=majority" -p recordcount=100000 -p operationcount=100000 -threads 16
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh run mongodb -P workloads/workloadc -p "mongodb.url=mongodb://mongo1:27017,mongo2:27017,mongo3:27017,mongo4:27017,mongo5:27017/ycsb?replicaSet=rs0&w=majority" -p recordcount=100000 -p operationcount=100000 -threads 16
+# mongo 5 nodes workloadc rep5
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh load mongodb -P workloads/workloadc -p "mongodb.url=mongodb://mongo1:27017,mongo2:27017,mongo3:27017,mongo4:27017,mongo5:27017/ycsb?replicaSet=rs0&w=majority" -p recordcount=100000 -p operationcount=100000 -threads 16
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh run mongodb -P workloads/workloadc -p "mongodb.url=mongodb://mongo1:27017,mongo2:27017,mongo3:27017,mongo4:27017,mongo5:27017/ycsb?replicaSet=rs0&w=majority" -p recordcount=100000 -p operationcount=100000 -threads 16
+# mongo 5 nodes workloadc rep6
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh load mongodb -P workloads/workloadc -p "mongodb.url=mongodb://mongo1:27017,mongo2:27017,mongo3:27017,mongo4:27017,mongo5:27017/ycsb?replicaSet=rs0&w=majority" -p recordcount=100000 -p operationcount=100000 -threads 16
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh run mongodb -P workloads/workloadc -p "mongodb.url=mongodb://mongo1:27017,mongo2:27017,mongo3:27017,mongo4:27017,mongo5:27017/ycsb?replicaSet=rs0&w=majority" -p recordcount=100000 -p operationcount=100000 -threads 16
+# mongo 5 nodes workloadc rep7
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh load mongodb -P workloads/workloadc -p "mongodb.url=mongodb://mongo1:27017,mongo2:27017,mongo3:27017,mongo4:27017,mongo5:27017/ycsb?replicaSet=rs0&w=majority" -p recordcount=100000 -p operationcount=100000 -threads 16
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh run mongodb -P workloads/workloadc -p "mongodb.url=mongodb://mongo1:27017,mongo2:27017,mongo3:27017,mongo4:27017,mongo5:27017/ycsb?replicaSet=rs0&w=majority" -p recordcount=100000 -p operationcount=100000 -threads 16
+# mongo 5 nodes workloadc rep8
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh load mongodb -P workloads/workloadc -p "mongodb.url=mongodb://mongo1:27017,mongo2:27017,mongo3:27017,mongo4:27017,mongo5:27017/ycsb?replicaSet=rs0&w=majority" -p recordcount=100000 -p operationcount=100000 -threads 16
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh run mongodb -P workloads/workloadc -p "mongodb.url=mongodb://mongo1:27017,mongo2:27017,mongo3:27017,mongo4:27017,mongo5:27017/ycsb?replicaSet=rs0&w=majority" -p recordcount=100000 -p operationcount=100000 -threads 16
+# mongo 5 nodes workloadc rep9
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh load mongodb -P workloads/workloadc -p "mongodb.url=mongodb://mongo1:27017,mongo2:27017,mongo3:27017,mongo4:27017,mongo5:27017/ycsb?replicaSet=rs0&w=majority" -p recordcount=100000 -p operationcount=100000 -threads 16
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh run mongodb -P workloads/workloadc -p "mongodb.url=mongodb://mongo1:27017,mongo2:27017,mongo3:27017,mongo4:27017,mongo5:27017/ycsb?replicaSet=rs0&w=majority" -p recordcount=100000 -p operationcount=100000 -threads 16
+# mongo 5 nodes workloadc rep10
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh load mongodb -P workloads/workloadc -p "mongodb.url=mongodb://mongo1:27017,mongo2:27017,mongo3:27017,mongo4:27017,mongo5:27017/ycsb?replicaSet=rs0&w=majority" -p recordcount=100000 -p operationcount=100000 -threads 16
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh run mongodb -P workloads/workloadc -p "mongodb.url=mongodb://mongo1:27017,mongo2:27017,mongo3:27017,mongo4:27017,mongo5:27017/ycsb?replicaSet=rs0&w=majority" -p recordcount=100000 -p operationcount=100000 -threads 16
+# mongo 5 nodes workloadd rep1
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh load mongodb -P workloads/workloadd -p "mongodb.url=mongodb://mongo1:27017,mongo2:27017,mongo3:27017,mongo4:27017,mongo5:27017/ycsb?replicaSet=rs0&w=majority" -p recordcount=100000 -p operationcount=100000 -threads 16
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh run mongodb -P workloads/workloadd -p "mongodb.url=mongodb://mongo1:27017,mongo2:27017,mongo3:27017,mongo4:27017,mongo5:27017/ycsb?replicaSet=rs0&w=majority" -p recordcount=100000 -p operationcount=100000 -threads 16
+# mongo 5 nodes workloadd rep2
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh load mongodb -P workloads/workloadd -p "mongodb.url=mongodb://mongo1:27017,mongo2:27017,mongo3:27017,mongo4:27017,mongo5:27017/ycsb?replicaSet=rs0&w=majority" -p recordcount=100000 -p operationcount=100000 -threads 16
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh run mongodb -P workloads/workloadd -p "mongodb.url=mongodb://mongo1:27017,mongo2:27017,mongo3:27017,mongo4:27017,mongo5:27017/ycsb?replicaSet=rs0&w=majority" -p recordcount=100000 -p operationcount=100000 -threads 16
+# mongo 5 nodes workloadd rep3
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh load mongodb -P workloads/workloadd -p "mongodb.url=mongodb://mongo1:27017,mongo2:27017,mongo3:27017,mongo4:27017,mongo5:27017/ycsb?replicaSet=rs0&w=majority" -p recordcount=100000 -p operationcount=100000 -threads 16
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh run mongodb -P workloads/workloadd -p "mongodb.url=mongodb://mongo1:27017,mongo2:27017,mongo3:27017,mongo4:27017,mongo5:27017/ycsb?replicaSet=rs0&w=majority" -p recordcount=100000 -p operationcount=100000 -threads 16
+# mongo 5 nodes workloadd rep4
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh load mongodb -P workloads/workloadd -p "mongodb.url=mongodb://mongo1:27017,mongo2:27017,mongo3:27017,mongo4:27017,mongo5:27017/ycsb?replicaSet=rs0&w=majority" -p recordcount=100000 -p operationcount=100000 -threads 16
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh run mongodb -P workloads/workloadd -p "mongodb.url=mongodb://mongo1:27017,mongo2:27017,mongo3:27017,mongo4:27017,mongo5:27017/ycsb?replicaSet=rs0&w=majority" -p recordcount=100000 -p operationcount=100000 -threads 16
+# mongo 5 nodes workloadd rep5
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh load mongodb -P workloads/workloadd -p "mongodb.url=mongodb://mongo1:27017,mongo2:27017,mongo3:27017,mongo4:27017,mongo5:27017/ycsb?replicaSet=rs0&w=majority" -p recordcount=100000 -p operationcount=100000 -threads 16
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh run mongodb -P workloads/workloadd -p "mongodb.url=mongodb://mongo1:27017,mongo2:27017,mongo3:27017,mongo4:27017,mongo5:27017/ycsb?replicaSet=rs0&w=majority" -p recordcount=100000 -p operationcount=100000 -threads 16
+# mongo 5 nodes workloadd rep6
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh load mongodb -P workloads/workloadd -p "mongodb.url=mongodb://mongo1:27017,mongo2:27017,mongo3:27017,mongo4:27017,mongo5:27017/ycsb?replicaSet=rs0&w=majority" -p recordcount=100000 -p operationcount=100000 -threads 16
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh run mongodb -P workloads/workloadd -p "mongodb.url=mongodb://mongo1:27017,mongo2:27017,mongo3:27017,mongo4:27017,mongo5:27017/ycsb?replicaSet=rs0&w=majority" -p recordcount=100000 -p operationcount=100000 -threads 16
+# mongo 5 nodes workloadd rep7
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh load mongodb -P workloads/workloadd -p "mongodb.url=mongodb://mongo1:27017,mongo2:27017,mongo3:27017,mongo4:27017,mongo5:27017/ycsb?replicaSet=rs0&w=majority" -p recordcount=100000 -p operationcount=100000 -threads 16
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh run mongodb -P workloads/workloadd -p "mongodb.url=mongodb://mongo1:27017,mongo2:27017,mongo3:27017,mongo4:27017,mongo5:27017/ycsb?replicaSet=rs0&w=majority" -p recordcount=100000 -p operationcount=100000 -threads 16
+# mongo 5 nodes workloadd rep8
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh load mongodb -P workloads/workloadd -p "mongodb.url=mongodb://mongo1:27017,mongo2:27017,mongo3:27017,mongo4:27017,mongo5:27017/ycsb?replicaSet=rs0&w=majority" -p recordcount=100000 -p operationcount=100000 -threads 16
+docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh run mongodb -P workloads/workloadd -p "mongodb.url=mongodb://mongo1:27017,mongo2:27017,mongo3:27017,mongo4:27017,mongo5:27017/ycsb?replicaSet=rs0&w=majority" -p recordcount=100000 -p operationcount=100000 -threads 16

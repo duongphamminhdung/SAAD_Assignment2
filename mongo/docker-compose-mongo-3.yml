@@ -1,0 +1,43 @@
+# MongoDB 3-node replica set: rs0 = mongo1 (primary after election) + mongo2/mongo3 (secondaries).
+# External network tp2-net is created by run_mongo.sh (or: docker network create tp2-net).
+# Team decision (2026-11-18): every DB container in this project is capped at
+# 2 CPUs / 2 GB RAM (deploy.resources.limits) — same limits for all 3 databases.
+networks:
+  tp2-net:
+    external: true
+
+services:
+  mongo1:
+    image: mongo:7.0
+    container_name: mongo1
+    # --oplogSize 1024: cap the oplog at 1 GB/node (uncapped it grows to ~50 GB/node
+    # and fills the disk); --bind_ip_all: accept connections from other containers
+    command: ["mongod", "--replSet", "rs0", "--bind_ip_all", "--oplogSize", "1024"]
+    networks: [tp2-net]
+    deploy:
+      resources:
+        limits:
+          cpus: "2"
+          memory: 2g
+
+  mongo2:
+    image: mongo:7.0
+    container_name: mongo2
+    command: ["mongod", "--replSet", "rs0", "--bind_ip_all", "--oplogSize", "1024"]
+    networks: [tp2-net]
+    deploy:
+      resources:
+        limits:
+          cpus: "2"
+          memory: 2g
+
+  mongo3:
+    image: mongo:7.0
+    container_name: mongo3
+    command: ["mongod", "--replSet", "rs0", "--bind_ip_all", "--oplogSize", "1024"]
+    networks: [tp2-net]
+    deploy:
+      resources:
+        limits:
+          cpus: "2"
+          memory: 2g
