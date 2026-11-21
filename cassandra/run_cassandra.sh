@@ -104,7 +104,10 @@ for NODES in $NODE_CONFIGS; do
 
   for WL in $WORKLOADS; do
     MOUNT_CUSTOM=()
-    if [ -f "$CUSTOM_WL_DIR/$WL" ]; then
+    if [ -f "$CUSTOM_WL_DIR/$WL" ] && [ -f "$YCSB_HOME/workloads/$WL" ]; then
+      # Never let a repo file silently replace a standard YCSB workload (e.g. workloada).
+      echo "workloads/$WL exists in the repo AND in YCSB core workloads; rename the repo file" >&2; exit 1
+    elif [ -f "$CUSTOM_WL_DIR/$WL" ]; then
       MOUNT_CUSTOM=(-v "$CUSTOM_WL_DIR":/tp2-workloads:ro); WLFILE="/tp2-workloads/$WL"
     else
       WLFILE="workloads/$WL"
@@ -122,7 +125,7 @@ for NODES in $NODE_CONFIGS; do
       if [ "$left" != "0" ]; then echo "TRUNCATE left $left rows" >&2; exit 1; fi
 
       for PHASE in load run; do
-        CMD=(docker run --rm --network tp2-net -v "$YCSB_HOME":/ycsb "${MOUNT_CUSTOM[@]}" -w /ycsb "$YCSB_IMAGE"
+        CMD=(docker run --rm --network tp2-net -v "$YCSB_HOME":/ycsb ${MOUNT_CUSTOM[@]+"${MOUNT_CUSTOM[@]}"} -w /ycsb "$YCSB_IMAGE"
              bin/ycsb.sh "$PHASE" cassandra-cql -P "$WLFILE"
              -p "hosts=$HOSTS"
              -p "cassandra.readconsistencylevel=$CONSISTENCY"
