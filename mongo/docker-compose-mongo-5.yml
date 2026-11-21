@@ -1,0 +1,47 @@
+# MongoDB 5-node replica set rs0: 1 primary + 4 secondaries (elected after rs.initiate,
+# which run_mongo.sh issues). External network tp2-net is created by the run scripts
+# (or: docker network create tp2-net) — same as the Redis and Cassandra compose files.
+#
+# Per-node limits (team decision, same for every DB): 2 CPUs, 2 GB RAM via deploy.resources.limits.
+# With a 2 GB limit WiredTiger sizes its cache to ~0.5 GB (50% of RAM - 1 GB), enough for the
+# ~110 MB YCSB dataset. Override for local debugging only: NODE_CPUS=1 NODE_MEM=1500m.
+networks:
+  tp2-net:
+    external: true
+
+x-mongo-node: &mongo-node
+  image: mongo:7.0.48
+  networks: [tp2-net]
+  deploy:
+    resources:
+      limits:
+        cpus: "${NODE_CPUS:-2}"
+        memory: ${NODE_MEM:-2g}
+  # --oplogSize 1024: cap the oplog at 1 GB/node (uncapped it grew to ~50 GB/node and filled the disk).
+  command: ["mongod", "--replSet", "rs0", "--bind_ip_all", "--oplogSize", "1024"]
+
+services:
+  mongo1:
+    <<: *mongo-node
+    container_name: mongo1
+    hostname: mongo1
+
+  mongo2:
+    <<: *mongo-node
+    container_name: mongo2
+    hostname: mongo2
+
+  mongo3:
+    <<: *mongo-node
+    container_name: mongo3
+    hostname: mongo3
+
+  mongo4:
+    <<: *mongo-node
+    container_name: mongo4
+    hostname: mongo4
+
+  mongo5:
+    <<: *mongo-node
+    container_name: mongo5
+    hostname: mongo5
