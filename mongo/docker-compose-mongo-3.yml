@@ -1,37 +1,43 @@
-# MongoDB 3-node replica set rs0: 1 primary + 2 secondaries (elected after rs.initiate,
-# which run_mongo.sh issues). External network tp2-net is created by the run scripts
-# (or: docker network create tp2-net) — same as the Redis and Cassandra compose files.
-#
-# Per-node limits (team decision, same for every DB): 2 CPUs, 2 GB RAM via deploy.resources.limits.
-# With a 2 GB limit WiredTiger sizes its cache to ~0.5 GB (50% of RAM - 1 GB), enough for the
-# ~110 MB YCSB dataset. Override for local debugging only: NODE_CPUS=1 NODE_MEM=1500m.
+# MongoDB 3-node replica set: rs0 = mongo1 (primary after election) + mongo2/mongo3 (secondaries).
+# External network tp2-net is created by run_mongo.sh (or: docker network create tp2-net).
+# Team decision (2026-11-18): every DB container in this project is capped at
+# 2 CPUs / 2 GB RAM (deploy.resources.limits) — same limits for all 3 databases.
 networks:
   tp2-net:
     external: true
 
-x-mongo-node: &mongo-node
-  image: mongo:7.0.48
-  networks: [tp2-net]
-  deploy:
-    resources:
-      limits:
-        cpus: "${NODE_CPUS:-2}"
-        memory: ${NODE_MEM:-2g}
-  # --oplogSize 1024: cap the oplog at 1 GB/node (uncapped it grew to ~50 GB/node and filled the disk).
-  command: ["mongod", "--replSet", "rs0", "--bind_ip_all", "--oplogSize", "1024"]
-
 services:
   mongo1:
-    <<: *mongo-node
+    image: mongo:7.0
     container_name: mongo1
-    hostname: mongo1
+    # --oplogSize 1024: cap the oplog at 1 GB/node (uncapped it grows to ~50 GB/node
+    # and fills the disk); --bind_ip_all: accept connections from other containers
+    command: ["mongod", "--replSet", "rs0", "--bind_ip_all", "--oplogSize", "1024"]
+    networks: [tp2-net]
+    deploy:
+      resources:
+        limits:
+          cpus: "2"
+          memory: 2g
 
   mongo2:
-    <<: *mongo-node
+    image: mongo:7.0
     container_name: mongo2
-    hostname: mongo2
+    command: ["mongod", "--replSet", "rs0", "--bind_ip_all", "--oplogSize", "1024"]
+    networks: [tp2-net]
+    deploy:
+      resources:
+        limits:
+          cpus: "2"
+          memory: 2g
 
   mongo3:
-    <<: *mongo-node
+    image: mongo:7.0
     container_name: mongo3
-    hostname: mongo3
+    command: ["mongod", "--replSet", "rs0", "--bind_ip_all", "--oplogSize", "1024"]
+    networks: [tp2-net]
+    deploy:
+      resources:
+        limits:
+          cpus: "2"
+          memory: 2g

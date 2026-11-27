@@ -1,0 +1,53 @@
+/opt/java/openjdk/bin/java  -classpath /ycsb/conf:/ycsb/lib/HdrHistogram-2.1.4.jar:/ycsb/lib/core-0.17.0.jar:/ycsb/lib/htrace-core4-4.1.0-incubating.jar:/ycsb/lib/jackson-core-asl-1.9.4.jar:/ycsb/lib/jackson-mapper-asl-1.9.4.jar:/ycsb/redis-binding/lib/commons-pool2-2.4.2.jar:/ycsb/redis-binding/lib/jedis-2.9.0.jar:/ycsb/redis-binding/lib/redis-binding-0.17.0.jar site.ycsb.Client -t -db site.ycsb.db.RedisClient -P workloads/workloade -p redis.host=redis1 -p redis.port=6379 -p recordcount=100000 -p operationcount=100000 -threads 16
+Command line: -t -db site.ycsb.db.RedisClient -P workloads/workloade -p redis.host=redis1 -p redis.port=6379 -p recordcount=100000 -p operationcount=100000 -threads 16
+YCSB Client 0.17.0
+
+Loading workload...
+Starting test.
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+[OVERALL], RunTime(ms), 38941
+[OVERALL], Throughput(ops/sec), 2567.9874682211553
+[TOTAL_GCS_G1_Young_Generation], Count, 169
+[TOTAL_GC_TIME_G1_Young_Generation], Time(ms), 175
+[TOTAL_GC_TIME_%_G1_Young_Generation], Time(%), 0.4493978069387021
+[TOTAL_GCS_G1_Old_Generation], Count, 0
+[TOTAL_GC_TIME_G1_Old_Generation], Time(ms), 0
+[TOTAL_GC_TIME_%_G1_Old_Generation], Time(%), 0.0
+[TOTAL_GCs], Count, 169
+[TOTAL_GC_TIME], Time(ms), 175
+[TOTAL_GC_TIME_%], Time(%), 0.4493978069387021
+[CLEANUP], Operations, 16
+[CLEANUP], AverageLatency(us), 560.125
+[CLEANUP], MinLatency(us), 20
+[CLEANUP], MaxLatency(us), 8107
+[CLEANUP], 95thPercentileLatency(us), 220
+[CLEANUP], 99thPercentileLatency(us), 8107
+[INSERT], Operations, 4927
+[INSERT], AverageLatency(us), 381.06170083214937
+[INSERT], MinLatency(us), 142
+[INSERT], MaxLatency(us), 56031
+[INSERT], 95thPercentileLatency(us), 585
+[INSERT], 99thPercentileLatency(us), 1098
+[INSERT], Return=OK, 4927
+[SCAN], Operations, 95073
+[SCAN], AverageLatency(us), 6491.494956507105
+[SCAN], MinLatency(us), 97
+[SCAN], MaxLatency(us), 109951
+[SCAN], 95thPercentileLatency(us), 12335
+[SCAN], 99thPercentileLatency(us), 17711
+[SCAN], Return=OK, 95073

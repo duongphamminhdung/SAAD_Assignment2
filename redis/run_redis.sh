@@ -26,6 +26,7 @@ YCSB_IMAGE="eclipse-temurin:11-jre"
 
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 RESULTS_DIR="$SCRIPT_DIR/../results"
+CUSTOM_WL_DIR="$(cd "$SCRIPT_DIR/.." && pwd)/workloads"
 RAW="$RESULTS_DIR/raw"
 mkdir -p "$RAW"
 CSV="$RESULTS_DIR/${DB}_results.csv"
@@ -36,6 +37,12 @@ touch "$CMDS"
 trap 'echo "run_redis.sh FAILED (nodes=${NODES:-?} workload=${WL:-?} rep=${REP:-?}); last log: results/raw/" >&2' ERR
 
 [ -d "$YCSB_HOME" ] || { echo "YCSB not found at $YCSB_HOME (set YCSB_HOME)" >&2; exit 1; }
+
+# One cluster at a time: refuse to benchmark while another DB's containers run.
+others="$(docker ps --format '{{.Names}}' | grep -E '^(mongo|cass)[0-9]+$' || true)"
+if [ -n "$others" ]; then
+  echo "other DB containers are running, stop them first: $others" >&2; exit 1
+fi
 docker network create tp2-net 2>/dev/null || true
 
 # Parse a YCSB log: lines like "[READ], AverageLatency(us), 214.5" -> CSV rows
@@ -43,8 +50,18 @@ docker network create tp2-net 2>/dev/null || true
 # analysis uses; load logs are kept in raw/ for the appendix).
 append_csv() {
   awk -F', ' -v p="$1,$2,$3,$4," \
-    'NF==3 && $1 ~ /^\[/ && $3 ~ /^[0-9.]+$/ { gsub(/[\[\]]/, "", $1); print p $1 "," $2 "," $3 }' \
+    'NF==3 && $1 ~ /^\[/ && $3 ~ /^-?[0-9.]+([eE][-+]?[0-9]+)?$/ { gsub(/[\[\]]/, "", $1); print p $1 "," $2 "," $3 }' \
     "$5" >> "$CSV"
+}
+
+# A YCSB log is valid when it finished ([OVERALL] present) and no operation failed.
+check_log() {
+  if ! grep -q '^\[OVERALL\], Throughput' "$1"; then
+    echo "YCSB did not finish: $1" >&2; tail -20 "$1" >&2; return 1
+  fi
+  if grep -qE 'Return=(ERROR|UNEXPECTED_STATE|NOT_FOUND)' "$1"; then
+    echo "YCSB reported failed operations: $1" >&2; grep -E 'Return=' "$1" >&2; return 1
+  fi
 }
 
 for NODES in $NODE_CONFIGS; do
@@ -70,6 +87,14 @@ for NODES in $NODE_CONFIGS; do
   if [ "$ok" != 1 ]; then echo "cluster never became healthy" >&2; exit 1; fi
 
   for WL in $WORKLOADS; do
+    # Core workloads leave MOUNT_CUSTOM empty; ${arr[@]+...} is safe under
+    # `set -u` on bash 3.2 (macOS) as well as on Linux.
+    MOUNT_CUSTOM=()
+    if [ -f "$CUSTOM_WL_DIR/$WL" ]; then
+      MOUNT_CUSTOM=(-v "$CUSTOM_WL_DIR":/tp2-workloads:ro); WLFILE="/tp2-workloads/$WL"
+    else
+      WLFILE="workloads/$WL"
+    fi
     for REP in $(seq 1 "$REPS"); do
       LOADLOG="$RAW/${DB}_${NODES}n_${WL}_rep${REP}_load.log"
       RUNLOG="$RAW/${DB}_${NODES}n_${WL}_rep${REP}_run.log"
@@ -88,30 +113,33 @@ for NODES in $NODE_CONFIGS; do
       done
 
       echo "-- ${WL} rep${REP}: load"
-      docker run --rm --network tp2-net -v "$YCSB_HOME":/ycsb -w /ycsb "$YCSB_IMAGE" \
-        bin/ycsb.sh load redis -P "workloads/${WL}" \
+      docker run --rm --network tp2-net -v "$YCSB_HOME":/ycsb ${MOUNT_CUSTOM[@]+"${MOUNT_CUSTOM[@]}"} -w /ycsb "$YCSB_IMAGE" \
+        bin/ycsb.sh load redis -P "$WLFILE" \
         -p "redis.host=redis1" -p "redis.port=6379" \
         -p "recordcount=$RECORDCOUNT" -p "operationcount=$OPERATIONCOUNT" -threads "$THREADS" \
         > "$LOADLOG" 2>&1
+      check_log "$LOADLOG"
 
       echo "-- ${WL} rep${REP}: run"
-      docker run --rm --network tp2-net -v "$YCSB_HOME":/ycsb -w /ycsb "$YCSB_IMAGE" \
-        bin/ycsb.sh run redis -P "workloads/${WL}" \
+      docker run --rm --network tp2-net -v "$YCSB_HOME":/ycsb ${MOUNT_CUSTOM[@]+"${MOUNT_CUSTOM[@]}"} -w /ycsb "$YCSB_IMAGE" \
+        bin/ycsb.sh run redis -P "$WLFILE" \
         -p "redis.host=redis1" -p "redis.port=6379" \
         -p "recordcount=$RECORDCOUNT" -p "operationcount=$OPERATIONCOUNT" -threads "$THREADS" \
         > "$RUNLOG" 2>&1
+      check_log "$RUNLOG"
 
       append_csv "$DB" "$NODES" "$WL" "$REP" "$RUNLOG"
 
       {
         echo "# redis ${NODES} nodes ${WL} rep${REP}"
-        echo "docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh load redis -P workloads/${WL} -p \"redis.host=redis1\" -p \"redis.port=6379\" -p recordcount=$RECORDCOUNT -p operationcount=$OPERATIONCOUNT -threads $THREADS"
-        echo "docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh run redis -P workloads/${WL} -p \"redis.host=redis1\" -p \"redis.port=6379\" -p recordcount=$RECORDCOUNT -p operationcount=$OPERATIONCOUNT -threads $THREADS"
+        echo "docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh load redis -P ${WLFILE} -p \"redis.host=redis1\" -p \"redis.port=6379\" -p recordcount=$RECORDCOUNT -p operationcount=$OPERATIONCOUNT -threads $THREADS"
+        echo "docker run --rm --network tp2-net -v ~/ycsb-0.17.0:/ycsb -w /ycsb eclipse-temurin:11-jre bin/ycsb.sh run redis -P ${WLFILE} -p \"redis.host=redis1\" -p \"redis.port=6379\" -p recordcount=$RECORDCOUNT -p operationcount=$OPERATIONCOUNT -threads $THREADS"
       } >> "$CMDS"
     done
   done
 
-  docker compose -f "$COMPOSE" down
+  # -v: also drop the data volumes so they do not pile up between generations.
+  docker compose -f "$COMPOSE" down -v
 done
 
 echo "== done; CSV: $CSV"
