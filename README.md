@@ -18,8 +18,8 @@ Team name: **TBD**.
 ## Repository layout
 
 ```
-mongo/       replica-set setup + run script      (A–E done on 3 & 5 nodes; custom workload pending)
-redis/       1 master + N replicas               (in progress)
+mongo/       replica set + run script            (3n A–E done; 5n 38/50 — resume with NODE_CONFIGS=5)
+redis/       1 master + N replicas               (3n + 5n A–E done)
 cassandra/   masterless ring                     (scripts done, smoke-tested)
 results/     CSVs, raw YCSB logs, commands.txt   (appendix evidence)
 analysis/    analyze.py: mean + 95% CI tables, figures, raw-values appendix table
@@ -48,9 +48,9 @@ Docker Desktop 4.36.0 / Docker Engine 27.3.1 (WSL2 backend), data on drive D:.
 
 - [ ] Choose team name
 - [ ] Define custom workload scenario (needed for ALL databases) — **proposal with 3 candidates: `workloads/README.md`, team to pick one**
-- [x] Redis: scripts written + smoke-tested locally (owner: Dung) — recorded runs on the test machine pending
+- [x] Redis: scripts + recorded runs A–E on 3 & 5 nodes (owner: Dung) — custom workload pending
 - [x] Cassandra: scripts written + smoke-tested locally (3 & 5 nodes, 2 CPU / 2 GB per node) — recorded runs on the test machine pending
-- [ ] Push Mongo files + results from teammate's machine into `mongo/` and `results/`
+- [ ] Mongo: scripts in `mongo/` (2 CPU / 2 GB limits); recorded 3n A–E done, 5n at 38/50 (workloadd 8/10, workloade 0/10) — finish 5n + custom workload
 - [x] Stats (mean, 95% CI) + tables + plots: `analysis/analyze.py` (tested on synthetic + smoke data; run once all CSVs are in)
 - [ ] IEEE paper (LaTeX template on Moodle)
 - [ ] Slides (results must be complete before Nov 30)

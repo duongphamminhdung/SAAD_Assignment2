@@ -106,7 +106,10 @@ for NODES in $NODE_CONFIGS; do
     # Core workloads leave this empty; the ${arr[@]+...} guard keeps the empty
     # expansion safe under `set -u` on bash 3.2 (macOS) as well as on Linux.
     MOUNT_CUSTOM=()
-    if [ -f "$CUSTOM_WL_DIR/$WL" ]; then
+    if [ -f "$CUSTOM_WL_DIR/$WL" ] && [ -f "$YCSB_HOME/workloads/$WL" ]; then
+      # Never let a repo file silently replace a standard YCSB workload (e.g. workloada).
+      echo "workloads/$WL exists in the repo AND in YCSB core workloads; rename the repo file" >&2; exit 1
+    elif [ -f "$CUSTOM_WL_DIR/$WL" ]; then
       MOUNT_CUSTOM=(-v "$CUSTOM_WL_DIR":/tp2-workloads:ro); WLFILE="/tp2-workloads/$WL"
     else
       WLFILE="workloads/$WL"
